@@ -20,12 +20,12 @@
 
     <fragment
         android:id="@+id/plant_detail_fragment"
-        android:name="com.google.samples.apps.sunflower.PlantDetailFragment"
-        android:label="@string/plant_details_title"
+        android:name="pgm.poolp.ugdata.ui.ChampionDetailFragment"
+        android:label="@string/champion_details_title"
         tools:layout="@layout/fragment_plant_detail">
 
         <action
-            android:id="@+id/action_plant_detail_fragment_to_gallery_fragment"
+            android:id="@+id/action_champion_detail_fragment_to_gallery_fragment"
             app:destination="@id/gallery_fragment"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left"
@@ -38,11 +38,11 @@
 
     <fragment
         android:id="@+id/gallery_fragment"
-        android:name="pgm.poolp.ugdata.ui.GalleryFragment"
-        android:label="@string/plant_details_title"
+        android:name="pgm.poolp.ugdata.ui.ChampionGalleryFragment"
+        android:label="@string/champion_details_title"
         tools:layout="@layout/fragment_gallery">
         <argument
-            android:name="plantName"
+            android:name="championName"
             app:argType="string" />
     </fragment>
 

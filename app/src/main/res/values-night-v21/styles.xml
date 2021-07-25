@@ -1,6 +1,6 @@
 <resources>
 
-    <style name="Theme.UGData" parent="Base.Theme.Sunflower">
+    <style name="Theme.UGData" parent="Base.Theme.UGData">
         <item name="android:windowTranslucentStatus">true</item>
     </style>
 

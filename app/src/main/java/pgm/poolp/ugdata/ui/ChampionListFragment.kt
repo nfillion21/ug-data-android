@@ -1,118 +1,59 @@
 package pgm.poolp.ugdata.ui
 
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import android.widget.TextView
-import androidx.appcompat.app.AppCompatActivity
+import android.view.*
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
-import com.google.android.material.tabs.TabLayoutMediator
-import pgm.poolp.ugdata.databinding.FragmentChampionListBinding
-import pgm.poolp.ugdata.viewmodels.PageViewModel
+import androidx.fragment.app.viewModels
 
-/**
- * A placeholder fragment containing a simple view.
- */
-class PlaceholderFragment : Fragment() {
 
-    private lateinit var pageViewModel: PageViewModel
-    private var _binding: FragmentChampionListBinding? = null
+@AndroidEntryPoint
+class ChampionListFragment : Fragment() {
 
-    // This property is only valid between onCreateView and
-    // onDestroyView.
-    private val binding get() = _binding!!
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        pageViewModel = ViewModelProvider(this).get(PageViewModel::class.java).apply {
-            setIndex(arguments?.getInt(ARG_SECTION_NUMBER) ?: 1)
-        }
-    }
-
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-
-        _binding = FragmentChampionListBinding.inflate(inflater, container, false)
-        val root = binding.root
-
-        val textView: TextView = binding.sectionLabel
-        pageViewModel.text.observe(viewLifecycleOwner, Observer {
-            textView.text = it
-            //textView.text = "test it"
-        })
-        return root
-    }
-
-    companion object {
-        /**
-         * The fragment argument representing the section number for this
-         * fragment.
-         */
-        private const val ARG_SECTION_NUMBER = "section_number"
-
-        /**
-         * Returns a new instance of this fragment for the given section
-         * number.
-         */
-        @JvmStatic
-        fun newInstance(sectionNumber: Int): PlaceholderFragment {
-            return PlaceholderFragment().apply {
-                arguments = Bundle().apply {
-                    putInt(ARG_SECTION_NUMBER, sectionNumber)
-                }
-            }
-        }
-    }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
-    }
-}
-
-class HomeViewPagerFragment : Fragment() {
+    private val viewModel: PlantListViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val binding = FragmentViewPagerBinding.inflate(inflater, container, false)
-        val tabLayout = binding.tabs
-        val viewPager = binding.viewPager
+        val binding = FragmentPlantListBinding.inflate(inflater, container, false)
+        context ?: return binding.root
 
-        viewPager.adapter = SunflowerPagerAdapter(this)
+        val adapter = PlantAdapter()
+        binding.plantList.adapter = adapter
+        subscribeUi(adapter)
 
-        // Set the icon and text for each tab
-        TabLayoutMediator(tabLayout, viewPager) { tab, position ->
-            tab.setIcon(getTabIcon(position))
-            tab.text = getTabTitle(position)
-        }.attach()
-
-        (activity as AppCompatActivity).setSupportActionBar(binding.toolbar)
-
+        setHasOptionsMenu(true)
         return binding.root
     }
 
-    private fun getTabIcon(position: Int): Int {
-        return when (position) {
-            MY_GARDEN_PAGE_INDEX -> R.drawable.garden_tab_selector
-            PLANT_LIST_PAGE_INDEX -> R.drawable.plant_list_tab_selector
-            else -> throw IndexOutOfBoundsException()
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.menu_plant_list, menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.filter_zone -> {
+                updateData()
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
         }
     }
 
-    private fun getTabTitle(position: Int): String? {
-        return when (position) {
-            MY_GARDEN_PAGE_INDEX -> getString(R.string.my_garden_title)
-            PLANT_LIST_PAGE_INDEX -> getString(R.string.plant_list_title)
-            else -> null
+    private fun subscribeUi(adapter: PlantAdapter) {
+        viewModel.plants.observe(viewLifecycleOwner) { plants ->
+            adapter.submitList(plants)
+        }
+    }
+
+    private fun updateData() {
+        with(viewModel) {
+            if (isFiltered()) {
+                clearGrowZoneNumber()
+            } else {
+                setGrowZoneNumber(9)
+            }
         }
     }
 }

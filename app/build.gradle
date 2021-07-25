@@ -5,8 +5,10 @@ plugins {
 }
 
 android {
-    compileSdkVersion 30
-    //compileSdkVersion rootProject.compileSdkVersion
+    compileSdkVersion rootProject.compileSdkVersion
+    buildFeatures {
+        dataBinding true
+    }
 
     defaultConfig {
         applicationId "pgm.poolp.ugdata"
@@ -80,6 +82,10 @@ dependencies {
 
     // JSON
     implementation "com.google.code.gson:gson:$rootProject.gsonVersion"
+
+    // Dagger
+    kapt "com.google.dagger:hilt-android-compiler:$rootProject.hiltVersion"
+    implementation "com.google.dagger:hilt-android:$rootProject.hiltVersion"
 
     // Testing
     testImplementation "junit:junit:$rootProject.junitVersion"
