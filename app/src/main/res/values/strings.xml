@@ -7,7 +7,7 @@
         translation_description="Title for the champion details screen where the user can see the details for a specific champion.">Champion details</string>
 
     <string name="champions_title"
-        translation_description="Title for the 'Champions' screen where the user can see the list of champions available in BB.">My garden</string>
+        translation_description="Title for the 'Champions' screen where the user can see the list of champions available in BB.">Champions</string>
     <string name="skills_title"
-        translation_description="Title for the 'Skills' screen where the user can see a list of skills available in BB.">Plant list</string>
+        translation_description="Title for the 'Skills' screen where the user can see a list of skills available in BB.">Skills</string>
 </resources>

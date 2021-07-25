@@ -3,30 +3,30 @@ package pgm.poolp.ugdata.ui
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.viewModels
+import pgm.poolp.ugdata.adapters.ChampionListAdapter
+import pgm.poolp.ugdata.databinding.FragmentChampionsBinding
 
-
-@AndroidEntryPoint
 class ChampionListFragment : Fragment() {
 
-    private val viewModel: PlantListViewModel by viewModels()
+    //private val viewModel: PlantListViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val binding = FragmentPlantListBinding.inflate(inflater, container, false)
+        val binding = FragmentChampionsBinding.inflate(inflater, container, false)
         context ?: return binding.root
 
-        val adapter = PlantAdapter()
-        binding.plantList.adapter = adapter
-        subscribeUi(adapter)
+        val adapter = ChampionListAdapter()
+        binding.championsRecyclerview.adapter = adapter
+        //subscribeUi(adapter)
 
-        setHasOptionsMenu(true)
+        //setHasOptionsMenu(true)
         return binding.root
     }
 
+    /*
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.menu_plant_list, menu)
     }
@@ -56,4 +56,5 @@ class ChampionListFragment : Fragment() {
             }
         }
     }
+    */
 }

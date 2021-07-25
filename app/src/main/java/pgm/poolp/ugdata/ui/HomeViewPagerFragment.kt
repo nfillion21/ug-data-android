@@ -23,16 +23,12 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.google.android.material.tabs.TabLayoutMediator
-import com.google.samples.apps.sunflower.adapters.MY_GARDEN_PAGE_INDEX
-import com.google.samples.apps.sunflower.adapters.PLANT_LIST_PAGE_INDEX
-import com.google.samples.apps.sunflower.adapters.SunflowerPagerAdapter
-import com.google.samples.apps.sunflower.databinding.FragmentViewPagerBinding
-import dagger.hilt.android.AndroidEntryPoint
 import pgm.poolp.ugdata.R
 import pgm.poolp.ugdata.adapters.CHAMPIONS_PAGE_INDEX
 import pgm.poolp.ugdata.adapters.SKILLS_PAGE_INDEX
+import pgm.poolp.ugdata.adapters.UGDataPagerAdapter
+import pgm.poolp.ugdata.databinding.FragmentViewPagerBinding
 
-@AndroidEntryPoint
 class HomeViewPagerFragment : Fragment() {
 
     override fun onCreateView(
@@ -44,7 +40,7 @@ class HomeViewPagerFragment : Fragment() {
         val tabLayout = binding.tabs
         val viewPager = binding.viewPager
 
-        viewPager.adapter = SunflowerPagerAdapter(this)
+        viewPager.adapter = UGDataPagerAdapter(this)
 
         // Set the icon and text for each tab
         TabLayoutMediator(tabLayout, viewPager) { tab, position ->
