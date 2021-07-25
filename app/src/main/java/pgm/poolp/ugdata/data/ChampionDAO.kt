@@ -12,11 +12,19 @@ interface ChampionDao {
     // The flow always holds/caches latest version of data. Notifies its observers when the
     // data has changed.
     @Query("SELECT * FROM champion_table ORDER BY champion ASC")
-    fun getAlphabetizedWords(): Flow<List<Champion>>
+    fun getAlphabetizedChampions(): Flow<List<Champion>>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    suspend fun insert(word: Champion)
+    suspend fun insert(champion: Champion)
 
     @Query("DELETE FROM champion_table")
     suspend fun deleteAll()
+
+    /*
+    @Query("SELECT * FROM champion_table WHERE id = :championId")
+    fun getChampion(championId: String): Flow<Champion>
+    */
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insertAll(champions: List<Champion>)
 }

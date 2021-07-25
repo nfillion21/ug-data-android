@@ -73,6 +73,12 @@ dependencies {
     implementation "com.google.android.material:material:$rootProject.materialVersion"
     //implementation 'com.google.android.material:material:1.4.0'
 
+    // Coroutine
+    implementation "androidx.work:work-runtime-ktx:$rootProject.workVersion"
+
+    // JSON
+    implementation "com.google.code.gson:gson:$rootProject.gsonVersion"
+
     // Testing
     testImplementation "junit:junit:$rootProject.junitVersion"
     //testImplementation 'junit:junit:4.+'
