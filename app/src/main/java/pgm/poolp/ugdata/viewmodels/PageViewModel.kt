@@ -1,4 +1,4 @@
-package pgm.poolp.ugdata.ui.main
+package pgm.poolp.ugdata.viewmodels
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

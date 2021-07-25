@@ -1,4 +1,4 @@
-package pgm.poolp.ugdata.ui.main
+package pgm.poolp.ugdata.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,8 +8,8 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import pgm.poolp.ugdata.R
 import pgm.poolp.ugdata.databinding.FragmentMainBinding
+import pgm.poolp.ugdata.viewmodels.PageViewModel
 
 /**
  * A placeholder fragment containing a simple view.
