@@ -5,10 +5,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import pgm.poolp.ugdata.databinding.FragmentMainBinding
+import com.google.android.material.tabs.TabLayoutMediator
+import pgm.poolp.ugdata.databinding.FragmentChampionListBinding
 import pgm.poolp.ugdata.viewmodels.PageViewModel
 
 /**
@@ -17,7 +19,7 @@ import pgm.poolp.ugdata.viewmodels.PageViewModel
 class PlaceholderFragment : Fragment() {
 
     private lateinit var pageViewModel: PageViewModel
-    private var _binding: FragmentMainBinding? = null
+    private var _binding: FragmentChampionListBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -31,11 +33,12 @@ class PlaceholderFragment : Fragment() {
     }
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
 
-        _binding = FragmentMainBinding.inflate(inflater, container, false)
+        _binding = FragmentChampionListBinding.inflate(inflater, container, false)
         val root = binding.root
 
         val textView: TextView = binding.sectionLabel
@@ -70,5 +73,46 @@ class PlaceholderFragment : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+    }
+}
+
+class HomeViewPagerFragment : Fragment() {
+
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        val binding = FragmentViewPagerBinding.inflate(inflater, container, false)
+        val tabLayout = binding.tabs
+        val viewPager = binding.viewPager
+
+        viewPager.adapter = SunflowerPagerAdapter(this)
+
+        // Set the icon and text for each tab
+        TabLayoutMediator(tabLayout, viewPager) { tab, position ->
+            tab.setIcon(getTabIcon(position))
+            tab.text = getTabTitle(position)
+        }.attach()
+
+        (activity as AppCompatActivity).setSupportActionBar(binding.toolbar)
+
+        return binding.root
+    }
+
+    private fun getTabIcon(position: Int): Int {
+        return when (position) {
+            MY_GARDEN_PAGE_INDEX -> R.drawable.garden_tab_selector
+            PLANT_LIST_PAGE_INDEX -> R.drawable.plant_list_tab_selector
+            else -> throw IndexOutOfBoundsException()
+        }
+    }
+
+    private fun getTabTitle(position: Int): String? {
+        return when (position) {
+            MY_GARDEN_PAGE_INDEX -> getString(R.string.my_garden_title)
+            PLANT_LIST_PAGE_INDEX -> getString(R.string.plant_list_title)
+            else -> null
+        }
     }
 }

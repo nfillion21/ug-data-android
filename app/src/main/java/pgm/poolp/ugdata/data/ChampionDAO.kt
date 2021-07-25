@@ -23,7 +23,7 @@ interface ChampionDao {
     /*
     @Query("SELECT * FROM champion_table WHERE id = :championId")
     fun getChampion(championId: String): Flow<Champion>
-    */
+     */
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertAll(champions: List<Champion>)
