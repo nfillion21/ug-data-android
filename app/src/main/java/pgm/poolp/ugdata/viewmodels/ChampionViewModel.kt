@@ -1,27 +1,34 @@
 package pgm.poolp.ugdata.viewmodels
 
 import androidx.lifecycle.*
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import pgm.poolp.ugdata.data.Champion
 import pgm.poolp.ugdata.data.ChampionRepository
+import javax.inject.Inject
 
-class ChampionViewModel(private val repository: ChampionRepository) : ViewModel() {
+@HiltViewModel
+class ChampionViewModel @Inject internal constructor(
+    championRepository: ChampionRepository) : ViewModel() {
 
     // Using LiveData and caching what allWords returns has several benefits:
     // - We can put an observer on the data (instead of polling for changes) and only update the
     //   the UI when the data actually changes.
     // - Repository is completely separated from the UI through the ViewModel.
-    val allWords: LiveData<List<Champion>> = repository.allWords.asLiveData()
+    val allChampions: LiveData<List<Champion>> = championRepository.allChampions.asLiveData()
 
     /**
      * Launching a new coroutine to insert the data in a non-blocking way
      */
+    /*
     fun insert(champion: Champion) = viewModelScope.launch {
-        repository.insert(champion)
+        championRepository.insert(champion)
     }
+    */
 }
 
-class WordViewModelFactory(private val repository: ChampionRepository) : ViewModelProvider.Factory {
+/*
+class ChampionViewModelFactory(private val repository: ChampionRepository) : ViewModelProvider.Factory {
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
         if (modelClass.isAssignableFrom(ChampionViewModel::class.java)) {
             @Suppress("UNCHECKED_CAST")
@@ -30,3 +37,4 @@ class WordViewModelFactory(private val repository: ChampionRepository) : ViewMod
         throw IllegalArgumentException("Unknown ViewModel class")
     }
 }
+*/

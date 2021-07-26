@@ -1,9 +1,11 @@
 package pgm.poolp.ugdata.data
 
 import android.content.Context
+import androidx.databinding.adapters.Converters
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import androidx.room.TypeConverters
 import androidx.sqlite.db.SupportSQLiteDatabase
 import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkManager
@@ -17,7 +19,7 @@ import pgm.poolp.ugdata.workers.ChampionDatabaseWorker.Companion.KEY_FILENAME
  * This is the backend. The database. This used to be done by the OpenHelper.
  * The fact that this has very few comments emphasizes its coolness.
  */
-@Database(entities = [Champion::class], version = 1)
+@Database(entities = [Champion::class], version = 1, exportSchema = false)
 abstract class ChampionRoomDatabase : RoomDatabase() {
 
     abstract fun championDao(): ChampionDao
@@ -41,7 +43,7 @@ abstract class ChampionRoomDatabase : RoomDatabase() {
             )
                 // Wipes and rebuilds instead of migrating if no Migration object.
                 // Migration is not part of this codelab.
-                .fallbackToDestructiveMigration()
+                //.fallbackToDestructiveMigration()
                 .addCallback(ChampionDatabaseCallback(context))
                 .build()
         }
