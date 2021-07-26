@@ -1,62 +1,68 @@
 package pgm.poolp.ugdata.adapters
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import pgm.poolp.ugdata.R
 import pgm.poolp.ugdata.data.Champion
+import pgm.poolp.ugdata.databinding.ListItemChampionBinding
 
-class ChampionListAdapter : ListAdapter<Champion, ChampionListAdapter.ChampionViewHolder>(CHAMPION_COMPARATOR)
-{
+class ChampionListAdapter : ListAdapter<Champion, RecyclerView.ViewHolder>(ChampionDiffCallback()) {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ChampionViewHolder
-    {
-        return ChampionViewHolder.create(parent)
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
+        return ChampionViewHolder(
+            ListItemChampionBinding.inflate(
+                LayoutInflater.from(parent.context),
+                parent,
+                false
+            )
+        )
     }
 
-    override fun onBindViewHolder(holder: ChampionViewHolder, position: Int)
-    {
-        val current = getItem(position)
-        holder.bind(current.word)
+    override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
+        val champion = getItem(position)
+        (holder as ChampionViewHolder).bind(champion)
     }
-
-    class ChampionViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
-    {
-        private val wordItemView: TextView = itemView.findViewById(R.id.textView)
-
-        fun bind(text: String?)
-        {
-            wordItemView.text = text
+    class ChampionViewHolder(
+        private val binding: ListItemChampionBinding
+    ) : RecyclerView.ViewHolder(binding.root) {
+        init {
+            binding.setClickListener {
+                binding.champion?.let { champion ->
+                    //navigateToPlant(plant, it)
+                }
+            }
         }
 
-        companion object
-        {
-            fun create(parent: ViewGroup): ChampionViewHolder
-            {
-                val view: View = LayoutInflater.from(parent.context)
-                    .inflate(R.layout.recyclerview_item, parent, false)
-                return ChampionViewHolder(view)
+        /*
+        private fun navigateToPlant(
+            champion: Champion,
+            view: View
+        ) {
+            val direction =
+                HomeViewPagerFragmentDirections.actionViewPagerFragmentToPlantDetailFragment(
+                    plant.plantId
+                )
+            view.findNavController().navigate(direction)
+        }
+        */
+
+        fun bind(item: Champion) {
+            binding.apply {
+                champion = item
+                executePendingBindings()
             }
         }
     }
+}
+private class ChampionDiffCallback : DiffUtil.ItemCallback<Champion>() {
 
-    companion object
-    {
-        private val CHAMPION_COMPARATOR = object : DiffUtil.ItemCallback<Champion>()
-        {
-            override fun areItemsTheSame(oldItem: Champion, newItem: Champion): Boolean
-            {
-                return oldItem === newItem
-            }
+    override fun areItemsTheSame(oldItem: Champion, newItem: Champion): Boolean {
+        return oldItem.championId == newItem.championId
+    }
 
-            override fun areContentsTheSame(oldItem: Champion, newItem: Champion): Boolean
-            {
-                return oldItem.word == newItem.word
-            }
-        }
+    override fun areContentsTheSame(oldItem: Champion, newItem: Champion): Boolean {
+        return oldItem == newItem
     }
 }

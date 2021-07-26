@@ -15,11 +15,6 @@ import pgm.poolp.ugdata.viewmodels.ChampionViewModel
 class ChampionListFragment : Fragment() {
 
     private val championViewModel: ChampionViewModel by viewModels()
-    /*
-    private val championViewModel: ChampionViewModel by viewModels {
-        ChampionViewModelFactory((activity?.application as MainApplication).repository)
-    }
-    */
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -30,7 +25,7 @@ class ChampionListFragment : Fragment() {
         context ?: return binding.root
 
         val adapter = ChampionListAdapter()
-        binding.championsRecyclerview.adapter = adapter
+        binding.championsList.adapter = adapter
         subscribeUi(adapter)
 
         //setHasOptionsMenu(true)
@@ -38,8 +33,8 @@ class ChampionListFragment : Fragment() {
     }
 
     private fun subscribeUi(adapter: ChampionListAdapter) {
-        championViewModel.allChampions.observe(viewLifecycleOwner) { plants ->
-            adapter.submitList(plants)
+        championViewModel.allChampions.observe(viewLifecycleOwner) { champions ->
+            adapter.submitList(champions)
         }
     }
 
