@@ -10,4 +10,6 @@
         translation_description="Title for the 'Champions' screen where the user can see the list of champions available in BB.">Champions</string>
     <string name="skills_title"
         translation_description="Title for the 'Skills' screen where the user can see a list of skills available in BB.">Skills</string>
+
+    <string name="a11y_champion_item_image" translation_description="Accessibility text for each of the champion images shown in the 'Champions' screen.">Picture of champion</string>
 </resources>

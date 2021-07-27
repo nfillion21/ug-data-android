@@ -20,10 +20,8 @@ interface ChampionDao {
     @Query("DELETE FROM champion_table")
     suspend fun deleteAll()
 
-    /*
     @Query("SELECT * FROM champion_table WHERE id = :championId")
     fun getChampion(championId: String): Flow<Champion>
-     */
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertAll(champions: List<Champion>)

@@ -26,18 +26,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <!--
             <ImageView
-                android:id="@+id/plant_item_image"
+                android:id="@+id/champion_item_image"
                 android:layout_width="0dp"
-                android:layout_height="@dimen/plant_item_image_height"
-                android:contentDescription="@string/a11y_plant_item_image"
+                android:layout_height="@dimen/champion_item_image_height"
+                android:contentDescription="@string/a11y_champion_item_image"
                 android:scaleType="centerCrop"
-                app:imageFromUrl="@{plant.imageUrl}"
+                app:imageFromUrl="@{champion.imageUrl}"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
-            -->
 
             <TextView
                 android:id="@+id/champion_item_title"
@@ -49,6 +47,7 @@
                 android:textAppearance="?attr/textAppearanceListItem"
                 android:gravity="center_horizontal"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/champion_item_image"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 tools:text="Tomato"/>

@@ -1,14 +1,24 @@
 [
   {
     "championId": "barik-farblast",
-    "name": "Barik Tirloin"
+    "name": "Barik Tirloin",
+    "imageUrl": "https://static.wikia.nocookie.net/blood-bowl/images/a/ac/BarikFarblastArt.jpg/revision/latest?cb=20190128011002"
   },
   {
-    "championId": "bertha-bigfist",
-    "name": "Bertha GroPoing"
+    "championId": "morg-n-throg",
+    "name": "Morg 'N' Thorg",
+    "imageUrl": "https://static.wikia.nocookie.net/blood-bowl/images/b/bb/Morg.jpg/revision/latest/scale-to-width-down/629?cb=20181002001230"
   },
   {
     "championId": "boomer-eziasson",
-    "name": "Blam' Eziasson"
+    "name": "Blam' Eziasson",
+    "imageUrl": "https://static.wikia.nocookie.net/blood-bowl/images/0/0b/BoomerArt.jpg/revision/latest/scale-to-width-down/359?cb=20200725170611"
+  },
+  {
+    "championId": "mighty-zug",
+    "name": "Zug la Bete",
+    "imageUrl": "https://static.wikia.nocookie.net/blood-bowl/images/3/31/Video-3.jpg/revision/latest/scale-to-width-down/587?cb=20180930194738"
   }
+
+
 ]

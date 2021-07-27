@@ -20,6 +20,8 @@ buildscript {
 
         hiltVersion = '2.33-beta'
 
+        glideVersion = '4.10.0'
+
         // testing
         junitVersion = '4.13.2'
         espressoVersion = '3.1.0'
