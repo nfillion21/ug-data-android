@@ -10,6 +10,7 @@ import androidx.work.WorkManager
 import androidx.work.workDataOf
 import pgm.poolp.ugdata.utilities.CHAMPION_DATA_FILENAME
 import pgm.poolp.ugdata.utilities.DATABASE_NAME
+import pgm.poolp.ugdata.utilities.SKILL_DATA_FILENAME
 import pgm.poolp.ugdata.workers.ChampionDatabaseWorker
 import pgm.poolp.ugdata.workers.ChampionDatabaseWorker.Companion.KEY_FILENAME
 
@@ -21,6 +22,7 @@ import pgm.poolp.ugdata.workers.ChampionDatabaseWorker.Companion.KEY_FILENAME
 abstract class ChampionRoomDatabase : RoomDatabase() {
 
     abstract fun championDao(): ChampionDao
+    abstract fun skillDao(): SkillDao
 
     companion object {
         @Volatile
@@ -55,11 +57,15 @@ abstract class ChampionRoomDatabase : RoomDatabase() {
             override fun onCreate(db: SupportSQLiteDatabase) {
                 super.onCreate(db)
 
-                val request = OneTimeWorkRequestBuilder<ChampionDatabaseWorker>()
+                val requestChampions = OneTimeWorkRequestBuilder<ChampionDatabaseWorker>()
                     .setInputData(workDataOf(KEY_FILENAME to CHAMPION_DATA_FILENAME))
                     .build()
-                WorkManager.getInstance(context).enqueue(request)
+                WorkManager.getInstance(context).enqueue(requestChampions)
 
+                val requestSkills = OneTimeWorkRequestBuilder<ChampionDatabaseWorker>()
+                    .setInputData(workDataOf(KEY_FILENAME to SKILL_DATA_FILENAME))
+                    .build()
+                WorkManager.getInstance(context).enqueue(requestSkills)
 
                 /*
                 TODO build the same for skills, then I can test many-to-many table data connections

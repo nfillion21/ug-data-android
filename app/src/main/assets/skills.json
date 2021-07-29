@@ -1,0 +1,22 @@
+[
+  {
+    "skillId": "animal-sauvage",
+    "name": "Animal Sauvage",
+    "description": ""
+  },
+  {
+    "skillId": "chaine-et-boulet",
+    "name": "Chaîne & Boulet",
+    "description": ""
+  },
+  {
+    "skillId": "lancer-un-coequipier",
+    "name": "Lancer un Coéquipier",
+    "description": ""
+  },
+  {
+    "skillId": "pourriture-de-nurgle",
+    "name": "Pourriture de Nurgle",
+    "description": ""
+  }
+]
