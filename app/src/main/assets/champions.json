@@ -1,24 +1,64 @@
-[
-  {
-    "championId": "barik-farblast",
-    "name": "Barik Tirloin",
-    "imageUrl": "https://static.wikia.nocookie.net/blood-bowl/images/a/ac/BarikFarblastArt.jpg/revision/latest?cb=20190128011002"
-  },
-  {
-    "championId": "morg-n-throg",
-    "name": "Morg 'N' Thorg",
-    "imageUrl": "https://static.wikia.nocookie.net/blood-bowl/images/b/bb/Morg.jpg/revision/latest/scale-to-width-down/629?cb=20181002001230"
-  },
-  {
-    "championId": "boomer-eziasson",
-    "name": "Blam' Eziasson",
-    "imageUrl": "https://static.wikia.nocookie.net/blood-bowl/images/0/0b/BoomerArt.jpg/revision/latest/scale-to-width-down/359?cb=20200725170611"
-  },
-  {
-    "championId": "mighty-zug",
-    "name": "Zug la Bete",
-    "imageUrl": "https://static.wikia.nocookie.net/blood-bowl/images/3/31/Video-3.jpg/revision/latest/scale-to-width-down/587?cb=20180930194738"
-  }
-
-
-]
+{
+  "champions":[
+    {
+      "championId": "barik-farblast",
+      "name": "Barik Tirloin",
+      "imageUrl": "https://static.wikia.nocookie.net/blood-bowl/images/a/ac/BarikFarblastArt.jpg/revision/latest?cb=20190128011002"
+    },
+    {
+      "championId": "morg-n-throg",
+      "name": "Morg 'N' Thorg",
+      "imageUrl": "https://static.wikia.nocookie.net/blood-bowl/images/b/bb/Morg.jpg/revision/latest/scale-to-width-down/629?cb=20181002001230"
+    },
+    {
+      "championId": "boomer-eziasson",
+      "name": "Blam' Eziasson",
+      "imageUrl": "https://static.wikia.nocookie.net/blood-bowl/images/0/0b/BoomerArt.jpg/revision/latest/scale-to-width-down/359?cb=20200725170611"
+    },
+    {
+      "championId": "mighty-zug",
+      "name": "Zug la Bete",
+      "imageUrl": "https://static.wikia.nocookie.net/blood-bowl/images/3/31/Video-3.jpg/revision/latest/scale-to-width-down/587?cb=20180930194738"
+    }
+  ],
+  "skills":[
+    {
+      "skillId": "animal-sauvage",
+      "name": "Animal Sauvage",
+      "description": ""
+    },
+    {
+      "skillId": "chaine-et-boulet",
+      "name": "Chaîne & Boulet",
+      "description": ""
+    },
+    {
+      "skillId": "lancer-un-coequipier",
+      "name": "Lancer un Coéquipier",
+      "description": ""
+    },
+    {
+      "skillId": "pourriture-de-nurgle",
+      "name": "Pourriture de Nurgle",
+      "description": ""
+    }
+  ],
+  "champions_skills": [
+    {
+      "champion_id": "boomer-eziasson",
+      "skill_id": "pourriture-de-nurgle"
+    },
+    {
+      "champion_id": "mighty-zug",
+      "skill_id": "pourriture-de-nurgle"
+    },
+    {
+      "champion_id": "mighty-zug",
+      "skill_id": "animal-sauve"
+    },
+    {
+      "champion_id": "barik-farblast",
+      "skill_id": "chaine-et-boulet"
+    }
+  ]
+}

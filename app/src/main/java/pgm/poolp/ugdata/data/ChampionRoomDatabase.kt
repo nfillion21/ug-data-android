@@ -59,6 +59,11 @@ abstract class ChampionRoomDatabase : RoomDatabase() {
                     .setInputData(workDataOf(KEY_FILENAME to CHAMPION_DATA_FILENAME))
                     .build()
                 WorkManager.getInstance(context).enqueue(request)
+
+
+                /*
+                TODO build the same for skills, then I can test many-to-many table data connections
+                 */
             }
         }
     }
