@@ -12,33 +12,35 @@ import pgm.poolp.ugdata.utilities.CHAMPION_DATA_FILENAME
 import pgm.poolp.ugdata.utilities.DATABASE_NAME
 import pgm.poolp.ugdata.utilities.SKILL_DATA_FILENAME
 import pgm.poolp.ugdata.workers.ChampionDatabaseWorker
-import pgm.poolp.ugdata.workers.ChampionDatabaseWorker.Companion.KEY_FILENAME
+import pgm.poolp.ugdata.workers.ChampionDatabaseWorker.Companion.CHAMPION_KEY_FILENAME
+import pgm.poolp.ugdata.workers.SkillDatabaseWorker
+import pgm.poolp.ugdata.workers.SkillDatabaseWorker.Companion.SKILL_KEY_FILENAME
 
 /**
  * This is the backend. The database. This used to be done by the OpenHelper.
  * The fact that this has very few comments emphasizes its coolness.
  */
 @Database(entities = [Champion::class], version = 1, exportSchema = false)
-abstract class ChampionRoomDatabase : RoomDatabase() {
+abstract class UGDataRoomDatabase : RoomDatabase() {
 
     abstract fun championDao(): ChampionDao
     abstract fun skillDao(): SkillDao
 
     companion object {
         @Volatile
-        private var instance: ChampionRoomDatabase? = null
+        private var instance: UGDataRoomDatabase? = null
 
-        fun getInstance(context: Context): ChampionRoomDatabase {
+        fun getInstance(context: Context): UGDataRoomDatabase {
             return instance ?: synchronized(this)
             {
                 instance ?: buildDatabase(context).also { instance = it }
             }
         }
 
-        private fun buildDatabase(context: Context): ChampionRoomDatabase {
+        private fun buildDatabase(context: Context): UGDataRoomDatabase {
             return Room.databaseBuilder(
                 context.applicationContext,
-                ChampionRoomDatabase::class.java,
+                UGDataRoomDatabase::class.java,
                 DATABASE_NAME
             )
                 // Wipes and rebuilds instead of migrating if no Migration object.
@@ -58,12 +60,12 @@ abstract class ChampionRoomDatabase : RoomDatabase() {
                 super.onCreate(db)
 
                 val requestChampions = OneTimeWorkRequestBuilder<ChampionDatabaseWorker>()
-                    .setInputData(workDataOf(KEY_FILENAME to CHAMPION_DATA_FILENAME))
+                    .setInputData(workDataOf(CHAMPION_KEY_FILENAME to CHAMPION_DATA_FILENAME))
                     .build()
                 WorkManager.getInstance(context).enqueue(requestChampions)
 
-                val requestSkills = OneTimeWorkRequestBuilder<ChampionDatabaseWorker>()
-                    .setInputData(workDataOf(KEY_FILENAME to SKILL_DATA_FILENAME))
+                val requestSkills = OneTimeWorkRequestBuilder<SkillDatabaseWorker>()
+                    .setInputData(workDataOf(SKILL_KEY_FILENAME to SKILL_DATA_FILENAME))
                     .build()
                 WorkManager.getInstance(context).enqueue(requestSkills)
 

@@ -23,7 +23,8 @@ import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import pgm.poolp.ugdata.data.ChampionDao
-import pgm.poolp.ugdata.data.ChampionRoomDatabase
+import pgm.poolp.ugdata.data.SkillDao
+import pgm.poolp.ugdata.data.UGDataRoomDatabase
 import javax.inject.Singleton
 
 @InstallIn(SingletonComponent::class)
@@ -32,12 +33,17 @@ class DatabaseModule {
 
     @Singleton
     @Provides
-    fun provideAppDatabase(@ApplicationContext context: Context): ChampionRoomDatabase {
-        return ChampionRoomDatabase.getInstance(context)
+    fun provideAppDatabase(@ApplicationContext context: Context): UGDataRoomDatabase {
+        return UGDataRoomDatabase.getInstance(context)
     }
 
     @Provides
-    fun providePlantDao(appDatabase: ChampionRoomDatabase): ChampionDao {
+    fun provideChampionDao(appDatabase: UGDataRoomDatabase): ChampionDao {
         return appDatabase.championDao()
+    }
+
+    @Provides
+    fun provideSkillDao(appDatabase: UGDataRoomDatabase): SkillDao {
+        return appDatabase.skillDao()
     }
 }

@@ -9,8 +9,7 @@ import com.google.gson.reflect.TypeToken
 import com.google.gson.stream.JsonReader
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
-import pgm.poolp.ugdata.data.Champion
-import pgm.poolp.ugdata.data.ChampionRoomDatabase
+import pgm.poolp.ugdata.data.UGDataRoomDatabase
 import pgm.poolp.ugdata.data.Skill
 
 class SkillDatabaseWorker(
@@ -19,14 +18,14 @@ class SkillDatabaseWorker(
 ) : CoroutineWorker(context, workerParams) {
     override suspend fun doWork(): Result = withContext(Dispatchers.IO) {
         try {
-            val filename = inputData.getString(KEY_FILENAME)
+            val filename = inputData.getString(SKILL_KEY_FILENAME)
             if (filename != null) {
                 applicationContext.assets.open(filename).use { inputStream ->
                     JsonReader(inputStream.reader()).use { jsonReader ->
                         val skillType = object : TypeToken<List<Skill>>() {}.type
                         val skillList: List<Skill> = Gson().fromJson(jsonReader, skillType)
 
-                        val database = ChampionRoomDatabase.getInstance(applicationContext)
+                        val database = UGDataRoomDatabase.getInstance(applicationContext)
                         database.skillDao().insertAll(skillList)
 
                         Result.success()
@@ -44,6 +43,6 @@ class SkillDatabaseWorker(
 
     companion object {
         private const val TAG = "SkillDatabaseWorker"
-        const val KEY_FILENAME = "SKILL_DATA_FILENAME"
+        const val SKILL_KEY_FILENAME = "SKILL_DATA_FILENAME"
     }
 }

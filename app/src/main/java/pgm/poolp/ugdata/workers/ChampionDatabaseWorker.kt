@@ -10,7 +10,7 @@ import com.google.gson.stream.JsonReader
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import pgm.poolp.ugdata.data.Champion
-import pgm.poolp.ugdata.data.ChampionRoomDatabase
+import pgm.poolp.ugdata.data.UGDataRoomDatabase
 
 class ChampionDatabaseWorker(
     context: Context,
@@ -18,14 +18,14 @@ class ChampionDatabaseWorker(
 ) : CoroutineWorker(context, workerParams) {
     override suspend fun doWork(): Result = withContext(Dispatchers.IO) {
         try {
-            val filename = inputData.getString(KEY_FILENAME)
+            val filename = inputData.getString(CHAMPION_KEY_FILENAME)
             if (filename != null) {
                 applicationContext.assets.open(filename).use { inputStream ->
                     JsonReader(inputStream.reader()).use { jsonReader ->
                         val championType = object : TypeToken<List<Champion>>() {}.type
                         val championList: List<Champion> = Gson().fromJson(jsonReader, championType)
 
-                        val database = ChampionRoomDatabase.getInstance(applicationContext)
+                        val database = UGDataRoomDatabase.getInstance(applicationContext)
                         database.championDao().insertAll(championList)
 
                         Result.success()
@@ -43,6 +43,6 @@ class ChampionDatabaseWorker(
 
     companion object {
         private const val TAG = "ChampionDatabaseWorker"
-        const val KEY_FILENAME = "CHAMPION_DATA_FILENAME"
+        const val CHAMPION_KEY_FILENAME = "CHAMPION_DATA_FILENAME"
     }
 }
