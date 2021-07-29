@@ -20,7 +20,7 @@ import pgm.poolp.ugdata.workers.SkillDatabaseWorker.Companion.SKILL_KEY_FILENAME
  * This is the backend. The database. This used to be done by the OpenHelper.
  * The fact that this has very few comments emphasizes its coolness.
  */
-@Database(entities = [Champion::class], version = 1, exportSchema = false)
+@Database(entities = [Champion::class, Skill::class], version = 1, exportSchema = false)
 abstract class UGDataRoomDatabase : RoomDatabase() {
 
     abstract fun championDao(): ChampionDao

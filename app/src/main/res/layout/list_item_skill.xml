@@ -7,8 +7,8 @@
             name="clickListener"
             type="android.view.View.OnClickListener"/>
         <variable
-            name="champion"
-            type="pgm.poolp.ugdata.data.Champion"/>
+            name="skill"
+            type="pgm.poolp.ugdata.data.Skill"/>
     </data>
 
     <pgm.poolp.ugdata.views.MaskedCardView
@@ -26,6 +26,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+            <!--
             <ImageView
                 android:id="@+id/champion_item_image"
                 android:layout_width="0dp"
@@ -36,21 +37,21 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+            -->
 
             <TextView
-                android:id="@+id/champion_item_title"
+                android:id="@+id/skill_item_title"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_normal"
-                android:layout_marginTop="@dimen/margin_normal"
-                android:text="@{champion.name}"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@{skill.name}"
                 android:textAppearance="?attr/textAppearanceListItem"
-                android:gravity="center_horizontal"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/champion_item_image"
-                app:layout_constraintStart_toStartOf="parent"
+                
                 app:layout_constraintBottom_toBottomOf="parent"
-                tools:text="Tomato"/>
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Tomato" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
