@@ -102,7 +102,7 @@
                 android:layout_margin="@dimen/margin_normal">
 
                 <TextView
-                    android:id="@+id/plant_detail_name"
+                    android:id="@+id/champion_detail_name"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/margin_small"
@@ -118,7 +118,7 @@
                     tools:text="Apple" />
 
                 <TextView
-                    android:id="@+id/plant_watering_header"
+                    android:id="@+id/champion_content_header"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/margin_small"
@@ -130,10 +130,10 @@
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/plant_detail_name" />
+                    app:layout_constraintTop_toBottomOf="@id/champion_detail_name" />
 
                 <TextView
-                    android:id="@+id/plant_watering"
+                    android:id="@+id/champion_content"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/margin_small"
@@ -141,13 +141,12 @@
                     android:gravity="center_horizontal"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/plant_watering_header"
+                    app:layout_constraintTop_toBottomOf="@id/champion_content_header"
                     tools:text="every 7 days" />
 
                 <!--
                 app:wateringText="@{viewModel.champion.name}"
                 -->
-                <!--
                 <ImageView
                     android:id="@+id/gallery_nav"
                     android:layout_width="wrap_content"
@@ -158,13 +157,14 @@
                     android:contentDescription="@string/gallery_content_description"
                     android:focusable="true"
                     android:src="@drawable/ic_photo_library"
-                    app:isGone="@{!viewModel.hasValidUnsplashKey()}"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/plant_detail_name" />
-                -->
+                    app:layout_constraintTop_toBottomOf="@id/champion_detail_name" />
 
+                <!--
+                app:isGone="@{!viewModel.hasValidUnsplashKey()}"
+                -->
                 <TextView
-                    android:id="@+id/plant_description"
+                    android:id="@+id/champion_description"
                     style="?android:attr/textAppearanceMedium"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -175,7 +175,7 @@
                     android:minHeight="@dimen/plant_description_min_height"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/plant_watering"
+                    app:layout_constraintTop_toBottomOf="@id/champion_content"
                     tools:text="Details about the plant" />
 
                 <!--

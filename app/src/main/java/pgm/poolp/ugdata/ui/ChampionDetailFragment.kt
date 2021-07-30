@@ -52,7 +52,7 @@ class ChampionDetailFragment : Fragment() {
                 }
             }
 
-            //galleryNav.setOnClickListener { /*navigateToGallery()*/ }
+            galleryNav.setOnClickListener { navigateToGallery() }
 
             var isToolbarShown = false
 
@@ -99,15 +99,15 @@ class ChampionDetailFragment : Fragment() {
         return binding.root
     }
 
-    /*
     private fun navigateToGallery() {
-        championDetailViewModel.champion.value?.let { plant ->
+        /*
+        championDetailViewModel.champion.value?.let { champion ->
             val direction =
                 ChampionDetailFragmentDirections.actionChampionDetailFragmentToGalleryFragment(cham.name)
             findNavController().navigate(direction)
         }
+        */
     }
-    */
 
     // Helper function for calling a share functionality.
     // Should be used when user presses a share button/menu item.
