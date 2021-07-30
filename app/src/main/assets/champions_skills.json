@@ -1,18 +1,18 @@
 [
   {
-    "champion_id": "boomer-eziasson",
-    "skill_id": "pourriture-de-nurgle"
+    "championId": "boomer-eziasson",
+    "skillId": "pourriture-de-nurgle"
   },
   {
-    "champion_id": "mighty-zug",
-    "skill_id": "pourriture-de-nurgle"
+    "championId": "mighty-zug",
+    "skillId": "pourriture-de-nurgle"
   },
   {
-    "champion_id": "mighty-zug",
-    "skill_id": "animal-sauve"
+    "championId": "mighty-zug",
+    "skillId": "animal-sauve"
   },
   {
-    "champion_id": "barik-farblast",
-    "skill_id": "chaine-et-boulet"
+    "championId": "barik-farblast",
+    "skillId": "chaine-et-boulet"
   }
 ]

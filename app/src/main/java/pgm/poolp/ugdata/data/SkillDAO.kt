@@ -1,9 +1,6 @@
 package pgm.poolp.ugdata.data
 
-import androidx.room.Dao
-import androidx.room.Insert
-import androidx.room.OnConflictStrategy
-import androidx.room.Query
+import androidx.room.*
 import kotlinx.coroutines.flow.Flow
 
 @Dao
@@ -14,13 +11,17 @@ interface SkillDao {
     @Query("SELECT * FROM skills ORDER BY name")
     fun getSkills(): Flow<List<Skill>>
 
+    @Transaction
+    @Query("SELECT * FROM skills ORDER BY name")
+    fun getSkillsWithChampions(): Flow<List<SkillWithChampions>>
+
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insert(skill: Skill)
 
     @Query("DELETE FROM skills")
     suspend fun deleteAll()
 
-    @Query("SELECT * FROM skills WHERE id = :skillId")
+    @Query("SELECT * FROM skills WHERE skillId = :skillId")
     fun getSkill(skillId: String): Flow<Skill>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)

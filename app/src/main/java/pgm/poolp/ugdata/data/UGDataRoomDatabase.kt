@@ -9,10 +9,13 @@ import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkManager
 import androidx.work.workDataOf
 import pgm.poolp.ugdata.utilities.CHAMPION_DATA_FILENAME
+import pgm.poolp.ugdata.utilities.CHAMPION_SKILL_DATA_FILENAME
 import pgm.poolp.ugdata.utilities.DATABASE_NAME
 import pgm.poolp.ugdata.utilities.SKILL_DATA_FILENAME
 import pgm.poolp.ugdata.workers.ChampionDatabaseWorker
 import pgm.poolp.ugdata.workers.ChampionDatabaseWorker.Companion.CHAMPION_KEY_FILENAME
+import pgm.poolp.ugdata.workers.ChampionSkillDatabaseWorker
+import pgm.poolp.ugdata.workers.ChampionSkillDatabaseWorker.Companion.CHAMPION_SKILL_KEY_FILENAME
 import pgm.poolp.ugdata.workers.SkillDatabaseWorker
 import pgm.poolp.ugdata.workers.SkillDatabaseWorker.Companion.SKILL_KEY_FILENAME
 
@@ -20,11 +23,12 @@ import pgm.poolp.ugdata.workers.SkillDatabaseWorker.Companion.SKILL_KEY_FILENAME
  * This is the backend. The database. This used to be done by the OpenHelper.
  * The fact that this has very few comments emphasizes its coolness.
  */
-@Database(entities = [Champion::class, Skill::class], version = 1, exportSchema = false)
+@Database(entities = [Champion::class, Skill::class, ChampionSkillCrossRef::class], version = 1, exportSchema = false)
 abstract class UGDataRoomDatabase : RoomDatabase() {
 
     abstract fun championDao(): ChampionDao
     abstract fun skillDao(): SkillDao
+    abstract fun championSkillCrossRefDao(): ChampionSkillCrossRefDao
 
     companion object {
         @Volatile
@@ -59,19 +63,22 @@ abstract class UGDataRoomDatabase : RoomDatabase() {
             override fun onCreate(db: SupportSQLiteDatabase) {
                 super.onCreate(db)
 
+                val workManager = WorkManager.getInstance(context)
+
                 val requestChampions = OneTimeWorkRequestBuilder<ChampionDatabaseWorker>()
                     .setInputData(workDataOf(CHAMPION_KEY_FILENAME to CHAMPION_DATA_FILENAME))
                     .build()
-                WorkManager.getInstance(context).enqueue(requestChampions)
+                workManager.enqueue(requestChampions)
 
                 val requestSkills = OneTimeWorkRequestBuilder<SkillDatabaseWorker>()
                     .setInputData(workDataOf(SKILL_KEY_FILENAME to SKILL_DATA_FILENAME))
                     .build()
-                WorkManager.getInstance(context).enqueue(requestSkills)
+                workManager.enqueue(requestSkills)
 
-                /*
-                TODO build the same for skills, then I can test many-to-many table data connections
-                 */
+                val championsSkills = OneTimeWorkRequestBuilder<ChampionSkillDatabaseWorker>()
+                    .setInputData(workDataOf(CHAMPION_SKILL_KEY_FILENAME to CHAMPION_SKILL_DATA_FILENAME))
+                    .build()
+                workManager.enqueue(championsSkills)
             }
         }
     }
