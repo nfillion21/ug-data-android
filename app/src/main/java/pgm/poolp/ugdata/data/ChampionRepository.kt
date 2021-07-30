@@ -12,6 +12,7 @@ class ChampionRepository @Inject constructor(private val championDao: ChampionDa
     val allChampions: Flow<List<Champion>> = championDao.getChampions()
 
     fun getChampion(championId: String) = championDao.getChampion(championId)
+    fun getChampionWithSkills(championId: String) = championDao.getChampionWithSkills(championId)
     // By default Room runs suspend queries off the main thread, therefore, we don't need to
     // implement anything else to ensure we're not doing long running database work
     // off the main thread.

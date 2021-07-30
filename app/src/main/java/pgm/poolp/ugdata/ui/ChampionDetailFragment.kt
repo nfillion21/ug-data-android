@@ -11,10 +11,12 @@ import androidx.core.widget.NestedScrollView
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.lifecycle.lifecycleScope
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.launch
 import pgm.poolp.ugdata.R
 import pgm.poolp.ugdata.data.Champion
 import pgm.poolp.ugdata.databinding.FragmentChampionDetailBinding
@@ -43,14 +45,20 @@ class ChampionDetailFragment : Fragment() {
         ).apply {
             viewModel = championDetailViewModel
             lifecycleOwner = viewLifecycleOwner
-            callback = Callback { plant ->
-                plant?.let {
+            callback = Callback { champion ->
+                champion?.let {
                     hideAppBarFab(fab)
                     //championDetailViewModel.addPlantToGarden()
                     //Snackbar.make(root, R.string.added_plant_to_garden, Snackbar.LENGTH_LONG)
                         //.show()
+                    /*
+                    val skills = championDetailViewModel.championWithSkills
+                    val skills2 = championDetailViewModel.championWithSkills
+                     */
+
                 }
             }
+
 
             galleryNav.setOnClickListener { navigateToGallery() }
 
@@ -81,20 +89,16 @@ class ChampionDetailFragment : Fragment() {
             toolbar.setNavigationOnClickListener { view ->
                 view.findNavController().navigateUp()
             }
-
-            /*
-            toolbar.setOnMenuItemClickListener { item ->
-                when (item.itemId) {
-                    R.id.action_share -> {
-                        createShareIntent()
-                        true
-                    }
-                    else -> false
-                }
-            }
-            */
         }
         setHasOptionsMenu(true)
+
+        /*
+        championDetailViewModel.championWithSkills.observe(viewLifecycleOwner) { result ->
+
+            val skills = championDetailViewModel.championWithSkills
+            val skills2 = championDetailViewModel.championWithSkills
+        }
+        */
 
         return binding.root
     }
@@ -108,27 +112,6 @@ class ChampionDetailFragment : Fragment() {
         }
         */
     }
-
-    // Helper function for calling a share functionality.
-    // Should be used when user presses a share button/menu item.
-    /*
-    @Suppress("DEPRECATION")
-    private fun createShareIntent() {
-        val shareText = championDetailViewModel.plant.value.let { plant ->
-            if (plant == null) {
-                ""
-            } else {
-                getString(R.string.share_text_plant, plant.name)
-            }
-        }
-        val shareIntent = ShareCompat.IntentBuilder.from(requireActivity())
-            .setText(shareText)
-            .setType("text/plain")
-            .createChooserIntent()
-            .addFlags(Intent.FLAG_ACTIVITY_NEW_DOCUMENT or Intent.FLAG_ACTIVITY_MULTIPLE_TASK)
-        startActivity(shareIntent)
-    }
-    */
 
     // FloatingActionButtons anchored to AppBarLayouts have their visibility controlled by the scroll position.
     // We want to turn this behavior off to hide the FAB when it is clicked.

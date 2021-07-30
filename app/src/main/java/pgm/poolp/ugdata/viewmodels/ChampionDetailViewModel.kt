@@ -16,6 +16,7 @@ class ChampionDetailViewModel @Inject constructor(
 
     val championId: String = savedStateHandle.get<String>(CHAMPION_ID_SAVED_STATE_KEY)!!
     val champion = championRepository.getChampion(championId).asLiveData()
+    val championWithSkills = championRepository.getChampionWithSkills(championId).asLiveData()
     /*
     val isPlanted = gardenPlantingRepository.isPlanted(plantId).asLiveData()
 

@@ -4,9 +4,9 @@ import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "champions")
+@Entity
 data class Champion(
-    @PrimaryKey val championId: String,
+    @PrimaryKey (autoGenerate = false) val championId: String,
     val name: String,
     val imageUrl: String
 )

@@ -4,9 +4,9 @@ import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "skills")
+@Entity
 data class Skill(
-    @PrimaryKey val skillId: String,
+    @PrimaryKey (autoGenerate = false) val skillId: String,
     val name: String,
     val description: String
 )
