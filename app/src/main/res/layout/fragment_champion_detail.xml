@@ -142,9 +142,11 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/plant_watering_header"
-                    app:wateringText="@{viewModel.champion.name}"
                     tools:text="every 7 days" />
 
+                <!--
+                app:wateringText="@{viewModel.champion.name}"
+                -->
                 <!--
                 <ImageView
                     android:id="@+id/gallery_nav"
@@ -174,9 +176,11 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/plant_watering"
-                    app:renderHtml="@{viewModel.champion.name}"
                     tools:text="Details about the plant" />
 
+                <!--
+                app:renderHtml="@{viewModel.champion.name}"
+                -->
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.core.widget.NestedScrollView>
