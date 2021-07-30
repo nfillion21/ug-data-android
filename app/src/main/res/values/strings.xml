@@ -5,11 +5,11 @@
 
     <string name="champion_details_title"
         translation_description="Title for the champion details screen where the user can see the details for a specific champion.">Champion details</string>
-
     <string name="champions_title"
         translation_description="Title for the 'Champions' screen where the user can see the list of champions available in BB.">Champions</string>
     <string name="skills_title"
         translation_description="Title for the 'Skills' screen where the user can see a list of skills available in BB.">Skills</string>
-
     <string name="a11y_champion_item_image" translation_description="Accessibility text for each of the champion images shown in the 'Champions' screen.">Picture of champion</string>
+    <string name="champion_detail_image_content_description" translation_description="Content description for the header / hero image that is show at the top of the champion detail screen.">Image of champion</string>
+    <string name="watering_needs_prefix" translation_description="Prefix for the text describing how often a plant should be watered. Used in combination with watering_needs_suffix.">Watering needs</string>
 </resources>

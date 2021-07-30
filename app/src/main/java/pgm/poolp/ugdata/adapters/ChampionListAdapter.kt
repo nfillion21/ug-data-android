@@ -1,12 +1,15 @@
 package pgm.poolp.ugdata.adapters
 
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import pgm.poolp.ugdata.data.Champion
 import pgm.poolp.ugdata.databinding.ListItemChampionBinding
+import pgm.poolp.ugdata.ui.HomeViewPagerFragmentDirections
 
 class ChampionListAdapter : ListAdapter<Champion, RecyclerView.ViewHolder>(ChampionDiffCallback()) {
 
@@ -30,23 +33,21 @@ class ChampionListAdapter : ListAdapter<Champion, RecyclerView.ViewHolder>(Champ
         init {
             binding.setClickListener {
                 binding.champion?.let { champion ->
-                    //navigateToPlant(plant, it)
+                    navigateToChampion(champion, it)
                 }
             }
         }
 
-        /*
-        private fun navigateToPlant(
+        private fun navigateToChampion(
             champion: Champion,
             view: View
         ) {
             val direction =
-                HomeViewPagerFragmentDirections.actionViewPagerFragmentToPlantDetailFragment(
-                    plant.plantId
+                HomeViewPagerFragmentDirections.actionViewPagerFragmentToChampionDetailFragment(
+                    champion.championId
                 )
             view.findNavController().navigate(direction)
         }
-        */
 
         fun bind(item: Champion) {
             binding.apply {
@@ -56,6 +57,7 @@ class ChampionListAdapter : ListAdapter<Champion, RecyclerView.ViewHolder>(Champ
         }
     }
 }
+
 private class ChampionDiffCallback : DiffUtil.ItemCallback<Champion>() {
 
     override fun areItemsTheSame(oldItem: Champion, newItem: Champion): Boolean {

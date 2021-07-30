@@ -9,24 +9,22 @@
         android:name="pgm.poolp.ugdata.ui.HomeViewPagerFragment"
         tools:layout="@layout/fragment_view_pager">
 
-        <!--
         <action
             android:id="@+id/action_view_pager_fragment_to_champion_detail_fragment"
-            app:destination="@id/plant_detail_fragment"
+            app:destination="@id/champion_detail_fragment"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
-        -->
     </fragment>
 
-    <!--
     <fragment
-        android:id="@+id/plant_detail_fragment"
+        android:id="@+id/champion_detail_fragment"
         android:name="pgm.poolp.ugdata.ui.ChampionDetailFragment"
         android:label="@string/champion_details_title"
-        tools:layout="@layout/fragment_plant_detail">
+        tools:layout="@layout/fragment_champion_detail">
 
+        <!--
         <action
             android:id="@+id/action_champion_detail_fragment_to_gallery_fragment"
             app:destination="@id/gallery_fragment"
@@ -34,11 +32,13 @@
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
+        -->
         <argument
-            android:name="plantId"
+            android:name="championId"
             app:argType="string" />
     </fragment>
 
+    <!--
     <fragment
         android:id="@+id/gallery_fragment"
         android:name="pgm.poolp.ugdata.ui.ChampionGalleryFragment"
