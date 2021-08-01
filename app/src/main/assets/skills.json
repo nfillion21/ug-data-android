@@ -58,5 +58,70 @@
     "skillId": "tacle",
     "name": "Tacle",
     "description": "Annule la compétence Esquive d’un adversaire « Marqué » ou lors d’un Blocage."
+  },
+  {
+    "skillId": "cannonier",
+    "name": "Cannonier",
+    "description": "+1 à la CP lors des Passes Longues et Longues Bombes."
+  },
+  {
+    "skillId": "cannonier",
+    "name": "Cannonier",
+    "description": "+1 à la CP lors des Passes Longues et Longues Bombes."
+  },
+  {
+    "skillId": "chef",
+    "name": "Chef",
+    "description": "1 Relance de Chef (1 seule par équipe et par mi-temps) tant qu’un Chef est sur le terrain. Ne peut être annulée par un Cuistot."
+  },
+  {
+    "skillId": "delestage",
+    "name": "Délestage",
+    "description": "Permet de faire une Passe Rapide avant d’être bloqué (ou victime d’une Action Spéciale). Une fois la Passe résolue, on résout le Blocage (ou l’Action Spéciale). Sur Blitz, dès qu’il est désigné (à l’activation)."
+  },
+  {
+    "skillId": "fumblerooskie",
+    "name": "Fumblerooskie",
+    "description": "Lors des M ou Blitz, si porte le ballon, peut choisir de le « lâcher » (sans aucun rebond) dans une case qu’il traverse. Pas de TO."
+  },
+  {
+    "skillId": "nerfs-d-acier",
+    "name": "Nerfs d'acier",
+    "description": "Ignore les modificateurs de « Marquage » lors de Passes, pour Réceptionner ou Interférer avec une Passe."
+  },
+  {
+    "skillId": "passe",
+    "name": "Passe",
+    "description": "Relance si échec à un jet de CP."
+  },
+  {
+    "skillId": "passe-assuree",
+    "name": "Passe assurée",
+    "description": "Si commet une Maladresse sur une Action de Passe, cette dernière est annulée, il garde la possession, pas de TO."
+  },
+  {
+    "skillId": "passe-dans-la-course",
+    "name": "Passe dans la Course",
+    "description": "Permet de continuer à se déplacer après avoir réussi une Passe Rapide."
+  },
+  {
+    "skillId": "passe-desesperee",
+    "name": "Passe Désespérée",
+    "description": "Permet d’envoyer la balle (ou une bombe) sur n’importe qu’elle case du terrain. À minima la Passe est Imprécise, test de CP (comme pour une Longue Bombe) pour voir si Maladresse ou Méchamment Imprécise. Inutilisable en cas de Blizzard."
+  },
+  {
+    "skillId": "perce-nuages",
+    "name": "Perce–Nuages",
+    "description": "Si un adversaire réussit à Interférer avec une Passe Longue ou Longue Bombe, le joueur peut lui faire relancer le jet."
+  },
+  {
+    "skillId": "precision",
+    "name": "Précision",
+    "description": "+1 en CP sur les Passes Rapides ou Courtes."
+  },
+  {
+    "skillId": "sur-le-ballon",
+    "name": "Sur le Ballon",
+    "description": "Permet de bouger de 3 cases max (sans tenir compte du M, mais avec les règles de déplacement) lorsque le coach adverse annonce une Action de Passe et qu’il a déterminé la case cible. Peut aussi être utilisée lors du Coup d’Envoi (avant le jet sur la table) sans pour autant entrer dans la moitié de terrain adverse."
   }
 ]
