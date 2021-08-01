@@ -1,22 +1,62 @@
 [
   {
-    "skillId": "animal-sauvage",
-    "name": "Animal Sauvage",
-    "description": ""
+    "skillId": "arracher-le-ballon",
+    "name": "Arracher le ballon",
+    "description": "Le défenseur repoussé lors d’un Blocage (même lors d’un blitz) lâche la balle s’il la possédait. Elle rebondit à partir de la case où il est repoussé."
   },
   {
-    "skillId": "chaine-et-boulet",
-    "name": "Chaîne & Boulet",
-    "description": ""
+    "skillId": "blocage",
+    "name": "Blocage",
+    "description": "Peut ignorer le résultat « Les Deux Plaqués » lors d’un Blocage. Voir chapitre dédié."
   },
   {
-    "skillId": "lancer-un-coequipier",
-    "name": "Lancer un Coéquipier",
-    "description": ""
+    "skillId": "frappe-precise",
+    "name": "Frappe Précise",
+    "description": "D6 du Coup d’envoi/2 arrondi à l’inférieur (1=0 case, 2–3=1, 4–5=2, 6=3) si ce joueur effectue le Coup d’Envoi."
   },
   {
-    "skillId": "pourriture-de-nurgle",
-    "name": "Pourriture de Nurgle",
-    "description": ""
+    "skillId": "frenesie",
+    "name": "Frénésie",
+    "description": "Si le Défenseur est repoussé lors d’un Blocage, l’Attaquant doit poursuivre (si en est capable) et faire un second blocage (si adversaire tjs debout) et doit à nouveau poursuivre. Idem lors des Blitz, avec un coût de 1M pour le second Blocage avec obligation de « Foncer » si nécessaire. Si impossibilité de « Foncer », le second Blocage n’est pas résolu."
+  },
+  {
+    "skillId": "intrepide",
+    "name": "Intrépide",
+    "description": "Lors d’un Blocage, si 1D6+F >F du Défenseur, les F deviennent égales pour ce Blocage. Les soutiens sont ajoutés après le test. Sous Frénésie, le jet se fait séparément pour les deux Blocages."
+  },
+  {
+    "skillId": "joueur-deloyal",
+    "name": "Joueur Déloyal (+1)",
+    "description": "+1 au jet d’AR ou de Blessures (au choix après les jets) lors d’Agressions."
+  },
+  {
+    "skillId": "lutte",
+    "name": "Lutte",
+    "description": "En cas de « Les Deux Plaqués », (s’il fait ou subit un Blocage), peut décider que les deux joueurs sont « Mis à Terre » (pas de jet d’AR)."
+  },
+  {
+    "skillId": "poursuite",
+    "name": "Poursuite",
+    "description": "Permet de suivre un adversaire que le joueur « Marque » et qui se déplace volontairement hors de sa ZdT. Jetez (1D6+M)–M adverse : si 6+ ou si 6 naturel, le joueur se déplace dans la case laissée vacante ; si 5 ou moins, ou 1 naturel, rien ne se passe. Utilisable plusieurs fois par tour (d’équipe ou adverse). Si plusieurs joueurs avec Poursuite marquent le joueur adverse, un seul d’entre eux peut utiliser la compétence."
+  },
+  {
+    "skillId": "prise-sure",
+    "name": "Prise sûre",
+    "description": "Relance d’un échec pour Ramasser le Ballon. Annule Arracher le Ballon."
+  },
+  {
+    "skillId": "prise-sure",
+    "name": "Prise sûre",
+    "description": "Relance d’un échec pour Ramasser le Ballon. Annule Arracher le Ballon."
+  },
+  {
+    "skillId": "pro",
+    "name": "Pro",
+    "description": "1 seule fois durant son tour, si 3+ sur 1D6 peut relancer 1 dé (unique ou dans 1 groupement de dés) sauf AR ou Blessure. Après le jet de Pro, ne peut pas utiliser une relance provenant d’une autre source."
+  },
+  {
+    "skillId": "tacle",
+    "name": "Tacle",
+    "description": "Annule la compétence Esquive d’un adversaire « Marqué » ou lors d’un Blocage."
   }
 ]
