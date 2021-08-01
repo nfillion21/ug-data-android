@@ -183,5 +183,65 @@
     "skillId": "tacle-plongeant",
     "name": "Tacle Plongeant",
     "description": "Si un joueur adverse tente d’Esquiver, Enjamber ou Sauter, pour quitter une case où il est « Marqué » par ce joueur et qu’il réussit son jet de dé ; le Tacleur est « Mis à Terre » dans la case laissée libre par le joueur actif qui soustrait alors 2 au résultat du jet de dé précédent. Si plusieurs joueurs avec Tacle Plongeant marquent le joueur adverse, un seul d’entre eux peut utiliser la compétence."
+  },
+  {
+    "skillId": "bagarreur",
+    "name": "Bagarreur",
+    "description": "Permet de relancer un résultat « Les Deux Plaqués » lors d’un Blocage (pas lors d’un Blitz)."
+  },
+  {
+    "skillId": "blocage-multiple",
+    "name": "Blocage Multiple",
+    "description": "Blocage (pas lors d’un Blitz) contre 2 adversaires qu’il « Marque ». Chaque blocage est fait à part avec un malus de -2 en F (si TO, on résout qd même le second Blocage). Ne peut pas poursuivre, ni utiliser Frénésie."
+  },
+  {
+    "skillId": "bras-muscle",
+    "name": "Bras Musclé",
+    "description": "+1 aux Lancers de Coéquipier (doit posséder cette compétence pour acquérir Bras Musclé)."
+  },
+  {
+    "skillId": "chataigne",
+    "name": "Châtaigne (+1)",
+    "description": "Ajoutez le bonus entre parenthèses aux jets d’AR ou de Blessure sur les Blocages fait par ce joueur (même au cours des Blitz) et à son choix après le résultat du dé. Ne s’utilise pas avec Poignard et Tronçonneuse."
+  },
+  {
+    "skillId": "cle-de-bras",
+    "name": "Clé de Bras",
+    "description": "Lorsqu’un adversaire « Marqué » par ce joueur rate une action pour Esquiver, Enjamber ou Sauter (même si le joueur est « Mis à Terre »), il peut ajouter +1 aux jets d’AR ou de Blessure au choix du joueur après le résultat du dé. Si plusieurs joueurs avec Clé de Bras marquent le joueur adverse, un seul d’entre eux peut utiliser la compétence."
+  },
+  {
+    "skillId": "crane-epais",
+    "name": "Crâne Épais",
+    "description": "KO traités comme des Sonnés sur un résultat de 8 (7 pour les Minus) au jet de dés de Blessure."
+  },
+  {
+    "skillId": "esquive-en-force",
+    "name": "Esquive en Force",
+    "description": "Après résultat d’1 test d’Esquive peut ajouter au jet de dé : +1 si F4 ou moins, ou +2 si F5 ou plus."
+  },
+  {
+    "skillId": "garde",
+    "name": "Garde",
+    "description": "Ajoute un soutien offensif et défensif quel que soit le nombre de joueurs qui le « Marque » pour Bloquer et Agresser."
+  },
+  {
+    "skillId": "juggernaut",
+    "name": "Juggernaut",
+    "description": "Annule Parade, Stabilité et Lutte. Change un résultat « Les Deux Plaqués » en Repoussé lors des Blitz."
+  },
+  {
+    "skillId": "marteau-pilon",
+    "name": "Marteau Pilon",
+    "description": "Si « Plaque » un adversaire (même lors d’un Blitz) et qu’il est toujours Debout et adjacent, peut commettre 1 Agression gratuite (en lieu et place de celle du tour d’équipe et si elle n’a pas déjà été utilisée) sur le Plaqué, puis il est « Mis à Terre »."
+  },
+  {
+    "skillId": "projection",
+    "name": "Projection",
+    "description": "Le joueur choisit la case de Repoussé parmi les disponibles lors d’un Blocage (pas lors d’un Blitz) ayant un résultat « Repoussé ». Incompatible avec Frénésie. Annule Glissade Contrôlée (même durant un Blitz)."
+  },
+  {
+    "skillId": "stabilite",
+    "name": "Stabilité",
+    "description": "Peut choisir d’être « Plaqué » sur sa case et d’ignorer les « Repoussées » (même en chaîne). N’empêche pas l’utilisation de Frénésie."
   }
 ]
