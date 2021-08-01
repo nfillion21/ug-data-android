@@ -1,17 +1,137 @@
 [
   {
-    "championId": "morg-n-throg",
-    "name": "Morg 'N' Thor",
-    "imageUrl": "https://static.wikia.nocookie.net/blood-bowl/images/b/bb/Morg.jpg/revision/latest/scale-to-width-down/629?cb=20181002001230"
-  },
-  {
-    "championId": "boomer-eziasson",
-    "name": "Blam' Eziasson",
+    "championId": "akhorne-l-ecureuil",
+    "name": "Akhorne l'Écureuil",
     "imageUrl": "https://static.wikia.nocookie.net/blood-bowl/images/0/0b/BoomerArt.jpg/revision/latest/scale-to-width-down/359?cb=20200725170611"
   },
   {
+    "championId": "the-black-gobbo",
+    "name": "The Black Gobbo",
+    "imageUrl": "https://static.wikia.nocookie.net/blood-bowl/images/3/31/Video-3.jpg/revision/latest/scale-to-width-down/587?cb=20180930194738"
+  },
+  {
+    "championId": "bryce-the-slice-cambuel",
+    "name": "Bryce \"The Slice\" Cambuel",
+    "imageUrl": "https://static.wikia.nocookie.net/blood-bowl/images/3/31/Video-3.jpg/revision/latest/scale-to-width-down/587?cb=20180930194738"
+  },
+  {
+    "championId": "deeproot-strongbranch",
+    "name": "Deeproot Strongbranch",
+    "imageUrl": "https://static.wikia.nocookie.net/blood-bowl/images/3/31/Video-3.jpg/revision/latest/scale-to-width-down/587?cb=20180930194738"
+  },
+  {
+    "championId": "eldril-sidewinder",
+    "name": "Eldril Sidewinder",
+    "imageUrl": "https://static.wikia.nocookie.net/blood-bowl/images/3/31/Video-3.jpg/revision/latest/scale-to-width-down/587?cb=20180930194738"
+  },
+  {
+    "championId": "franck-n-stein",
+    "name": "Franck N Stein",
+    "imageUrl": "https://static.wikia.nocookie.net/blood-bowl/images/3/31/Video-3.jpg/revision/latest/scale-to-width-down/587?cb=20180930194738"
+  },
+  {
+    "championId": "giart-smahrip",
+    "name": "Giart Smahrip",
+    "imageUrl": "https://static.wikia.nocookie.net/blood-bowl/images/3/31/Video-3.jpg/revision/latest/scale-to-width-down/587?cb=20180930194738"
+  },
+  {
+    "championId": "gloriel-summerbloom",
+    "name": "Gloriel Summerbloom",
+    "imageUrl": "https://static.wikia.nocookie.net/blood-bowl/images/3/31/Video-3.jpg/revision/latest/scale-to-width-down/587?cb=20180930194738"
+  },
+  {
+    "championId": "grak-and-crumbleberry",
+    "name": "Grak & Crumbleberry",
+    "imageUrl": "https://static.wikia.nocookie.net/blood-bowl/images/3/31/Video-3.jpg/revision/latest/scale-to-width-down/587?cb=20180930194738"
+  },
+  {
+    "championId": "gretchen-wachter",
+    "name": "Gretchen Wächter",
+    "imageUrl": "https://static.wikia.nocookie.net/blood-bowl/images/3/31/Video-3.jpg/revision/latest/scale-to-width-down/587?cb=20180930194738"
+  },
+  {
+    "championId": "griff-oberwalf",
+    "name": "Griff Oberwald",
+    "imageUrl": "https://static.wikia.nocookie.net/blood-bowl/images/3/31/Video-3.jpg/revision/latest/scale-to-width-down/587?cb=20180930194738"
+  },
+  {
+    "championId": "grim-ironjaw",
+    "name": "Grim Ironjaw",
+    "imageUrl": "https://static.wikia.nocookie.net/blood-bowl/images/3/31/Video-3.jpg/revision/latest/scale-to-width-down/587?cb=20180930194738"
+  },
+  {
+    "championId": "hakflem-skuttlespike",
+    "name": "Hakflem Skuttlespike",
+    "imageUrl": "https://static.wikia.nocookie.net/blood-bowl/images/3/31/Video-3.jpg/revision/latest/scale-to-width-down/587?cb=20180930194738"
+  },
+  {
+    "championId": "helmutt-wolf",
+    "name": "Helmutt Wolf",
+    "imageUrl": "https://static.wikia.nocookie.net/blood-bowl/images/3/31/Video-3.jpg/revision/latest/scale-to-width-down/587?cb=20180930194738"
+  },
+  {
+    "championId": "karla-von-kill",
+    "name": "Karla Von Kill",
+    "imageUrl": "https://static.wikia.nocookie.net/blood-bowl/images/3/31/Video-3.jpg/revision/latest/scale-to-width-down/587?cb=20180930194738"
+  },
+  {
+    "championId": "lord-borak-the-despoiler",
+    "name": "Lord Borak the Despoiler",
+    "imageUrl": "https://static.wikia.nocookie.net/blood-bowl/images/3/31/Video-3.jpg/revision/latest/scale-to-width-down/587?cb=20180930194738"
+  },
+  {
     "championId": "mighty-zug",
-    "name": "Zug la Bete",
+    "name": "Mighty Zug",
+    "imageUrl": "https://static.wikia.nocookie.net/blood-bowl/images/3/31/Video-3.jpg/revision/latest/scale-to-width-down/587?cb=20180930194738"
+  },
+  {
+    "championId": "morg-n-thorg",
+    "name": "Morg 'n' Thorg",
+    "imageUrl": "https://static.wikia.nocookie.net/blood-bowl/images/3/31/Video-3.jpg/revision/latest/scale-to-width-down/587?cb=20180930194738"
+  },
+  {
+    "championId": "roxanna-darknail",
+    "name": "Roxanna Darknail",
+    "imageUrl": "https://static.wikia.nocookie.net/blood-bowl/images/3/31/Video-3.jpg/revision/latest/scale-to-width-down/587?cb=20180930194738"
+  },
+  {
+    "championId": "rumbelow-sheepskin",
+    "name": "Rumbelow Sheepskin",
+    "imageUrl": "https://static.wikia.nocookie.net/blood-bowl/images/3/31/Video-3.jpg/revision/latest/scale-to-width-down/587?cb=20180930194738"
+  },
+  {
+    "championId": "skrull-halfheight",
+    "name": "Skrull Halfheight",
+    "imageUrl": "https://static.wikia.nocookie.net/blood-bowl/images/3/31/Video-3.jpg/revision/latest/scale-to-width-down/587?cb=20180930194738"
+  },
+  {
+    "championId": "lucien-and-valen-swift",
+    "name": "Lucien & Valen Swift",
+    "imageUrl": "https://static.wikia.nocookie.net/blood-bowl/images/3/31/Video-3.jpg/revision/latest/scale-to-width-down/587?cb=20180930194738"
+  },
+  {
+    "championId": "varag-ghoul-shewer",
+    "name": "Varag Ghoul-Chewer",
+    "imageUrl": "https://static.wikia.nocookie.net/blood-bowl/images/3/31/Video-3.jpg/revision/latest/scale-to-width-down/587?cb=20180930194738"
+  },
+  {
+    "championId": "whilhelm-chaney",
+    "name": "Wilhelm Chaney",
+    "imageUrl": "https://static.wikia.nocookie.net/blood-bowl/images/3/31/Video-3.jpg/revision/latest/scale-to-width-down/587?cb=20180930194738"
+  },
+  {
+    "championId": "grombrindal-the-white-dwarf",
+    "name": "Grombrindal, the White Dwarf",
+    "imageUrl": "https://static.wikia.nocookie.net/blood-bowl/images/3/31/Video-3.jpg/revision/latest/scale-to-width-down/587?cb=20180930194738"
+  },
+  {
+    "championId": "willow-rosebark",
+    "name": "Willow Rosebark",
+    "imageUrl": "https://static.wikia.nocookie.net/blood-bowl/images/3/31/Video-3.jpg/revision/latest/scale-to-width-down/587?cb=20180930194738"
+  },
+  {
+    "championId": "zolcath-le-zoat",
+    "name": "Zolcath le Zoat",
     "imageUrl": "https://static.wikia.nocookie.net/blood-bowl/images/3/31/Video-3.jpg/revision/latest/scale-to-width-down/587?cb=20180930194738"
   }
 ]
