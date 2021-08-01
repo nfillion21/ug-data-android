@@ -123,5 +123,65 @@
     "skillId": "sur-le-ballon",
     "name": "Sur le Ballon",
     "description": "Permet de bouger de 3 cases max (sans tenir compte du M, mais avec les règles de déplacement) lorsque le coach adverse annonce une Action de Passe et qu’il a déterminé la case cible. Peut aussi être utilisée lors du Coup d’Envoi (avant le jet sur la table) sans pour autant entrer dans la moitié de terrain adverse."
+  },
+  {
+    "skillId": "defenseur",
+    "name": "Défenseur",
+    "description": "Durant tour adverse, les adversaires « Marqués » ne peuvent utiliser Garde."
+  },
+  {
+    "skillId": "equilibre",
+    "name": "Équilibre",
+    "description": "Relance lors d’un échec pour « Foncer » durant le tour d’équipe."
+  },
+  {
+    "skillId": "esquive",
+    "name": "Esquive",
+    "description": "Relance, 1 fois par tour d’équipe, d’une Esquive ratée. Influence le Blocage."
+  },
+  {
+    "skillId": "glissade-controlee",
+    "name": "Glissade Contrôlée",
+    "description": "Le coach de ce joueur choisit la case en cas de Repoussé (doit être inoccupée et adjacente) sauf si aucune n’est disponible."
+  },
+  {
+    "skillId": "liberation-controlee",
+    "name": "Libération Contrôlée",
+    "description": "Si « Plaqué » ou « Mis à Terre » (pas sur « Chute ») et en possession du ballon, le ballon ne rebondit pas. Il est placé, au choix du joueur, sur une case inoccupée et adjacente à la case qu’il occupait."
+  },
+  {
+    "skillId": "reception",
+    "name": "Réception",
+    "description": "Relance lors d’un échec pour Réceptionner le ballon."
+  },
+  {
+    "skillId": "reception-plongeante",
+    "name": "Réception Plongeante",
+    "description": "Possible de Réceptionner une Passe, un Renvoi ou un Coup d’Envoi (pas les Rebonds) lorsque le ballon atterrit dans une case de sa ZdT. +1 pour Réceptionner une Passe Précise ciblant la case où il se trouve."
+  },
+  {
+    "skillId": "retablissement",
+    "name": "Rétablissement",
+    "description": "Un joueur « Mis à Terre » se relève sans dépense de point de Mouvement. Peut faire un Blocage si réussit 1 jet d’Agilité à +1. Si rate ce test, reste « Mis à Terre » et son Action se termine."
+  },
+  {
+    "skillId": "saut",
+    "name": "Saut",
+    "description": "Incompatible avec Échasses à Ressort. Réduit de 1 (mini = -1) les modificateurs négatifs des tests d’AG des actions pour « Enjamber ». Peut également « Enjamber » toute case adjacente vide ou occupée, même par un joueur Debout."
+  },
+  {
+    "skillId": "sournois",
+    "name": "Sournois",
+    "description": "Lors des Agressions, n’est pas Expulsé par l’arbitre s’il obtient un double naturel sur jet d’AR, seulement sur le jet de Blessure. Peut également continuer à se déplacer (s’il lui reste du M) après avoir commis l’Agression."
+  },
+  {
+    "skillId": "sprint",
+    "name": "Sprint",
+    "description": "Peut « Foncer » 3 fois au lieu de 2."
+  },
+  {
+    "skillId": "tacle-plongeant",
+    "name": "Tacle Plongeant",
+    "description": "Si un joueur adverse tente d’Esquiver, Enjamber ou Sauter, pour quitter une case où il est « Marqué » par ce joueur et qu’il réussit son jet de dé ; le Tacleur est « Mis à Terre » dans la case laissée libre par le joueur actif qui soustrait alors 2 au résultat du jet de dé précédent. Si plusieurs joueurs avec Tacle Plongeant marquent le joueur adverse, un seul d’entre eux peut utiliser la compétence."
   }
 ]
