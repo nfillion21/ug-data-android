@@ -243,5 +243,205 @@
     "skillId": "stabilite",
     "name": "Stabilité",
     "description": "Peut choisir d’être « Plaqué » sur sa case et d’ignorer les « Repoussées » (même en chaîne). N’empêche pas l’utilisation de Frénésie."
+  },
+  {
+    "skillId": "bras-supplementaires",
+    "name": "Bras Supplémentaires",
+    "description": "+1 pour Réceptionner, pour Interférer avec une Passe ou Ramasser le ballon."
+  },
+  {
+    "skillId": "cornes",
+    "name": "Cornes",
+    "description": "+1 en F sur tous les Blocages lors d’un Blitz (avant tout autre modificateur)."
+  },
+  {
+    "skillId": "deux-tetes",
+    "name": "Deux Têtes",
+    "description": "+1 aux jets d’AG pour les Esquives."
+  },
+  {
+    "skillId": "grande-gueule",
+    "name": "Grande Gueule",
+    "description": "Relance lors d’un échec pour Réceptionner et annule Arracher le Ballon."
+  },
+  {
+    "skillId": "griffes",
+    "name": "Griffes",
+    "description": "Lors d’un jet d’Armure contre un joueur « Plaqué » au cours d’un Blocage réalisé par ce joueur, tout jet de 8+ (avant modificateur) pénètre automatiquement l’armure quel que soit son niveau."
+  },
+  {
+    "skillId": "main-demesuree",
+    "name": "Main Démesurée",
+    "description": "Ignore les modificateurs dus au « Marquage » ainsi qu’à la Pluie Battante (NdR : et Averse) en météo, quand il tente de Ramasser le ballon."
+  },
+  {
+    "skillId": "peau-de-fer",
+    "name": "Peau de Fer",
+    "description": "Annule la compétence Griffes."
+  },
+  {
+    "skillId": "presence-perturbante",
+    "name": "Présence Perturbante",
+    "description": "-1 aux Passes, Lancer de Coéquipier, Lancer de bombes, tentatives pour Réceptionner ou Interférer avec une Passe pour les adversaires se trouvant dans les 3 cases entourant ce joueur, même s’il est « Mis à Terre », « Sonné » ou ayant perdu sa ZdT."
+  },
+  {
+    "skillId": "queue-prehensile",
+    "name": "Queue Préhensile",
+    "description": "-1 aux tests d’AG des adversaires qui tentent d’Esquiver, Enjamber ou Sauter pour quitter la case que le joueur « Marque ». Si plusieurs joueurs avec Queue Préhensile marquent le joueur adverse, un seul d’entre eux peut utiliser la compétence."
+  },
+  {
+    "skillId": "repulsion",
+    "name": "Répulsion",
+    "description": "Quand est annoncé, sur ce joueur, un Blocage (même lors d’un Blitz) ou pour faire une Attaque Spéciale (même si le joueur a perdu sa ZdT), le coach adverse doit réussir un jet de 1D6>1."
+  },
+  {
+    "skillId": "tentacules",
+    "name": "Tentacules",
+    "description": "Permet de retenir sur place un adversaire que le joueur « Marque » et qui se déplace volontairement hors de sa ZdT. Jetez (1D6+F)-F adverse : si 6+ ou si 6 naturel, le joueur est maintenu sur place ; si 5 ou moins, ou 1 naturel, rien ne se passe. Utilisable plusieurs fois par tour (d’équipe ou adverse). Si plusieurs joueurs avec Tentacules marquent le joueur adverse, un seul d’entre eux peut utiliser la compétence."
+  },
+  {
+    "skillId": "tres-longues-jambes",
+    "name": "Très Longues Jambes",
+    "description": "Réduit de 1 (min -1) les modificateurs négatifs des jets d’AG pour Enjamber ou Sauter (s’il possède la compétence). +2 pour Interférer avec une Passe. Ignore Perce–Nuages."
+  },
+  {
+    "skillId": "animosite",
+    "name": "Animosité",
+    "description": "Le joueur acceptera de Transmettre ou de Passer le ballon à un coéquipier de race différente sur 2+ avec 1D6. En cas de 1, il finit son tour, l’action est perdue. N’affecte pas les Mercenaires et Star Players."
+  },
+  {
+    "skillId": "arme-secrete",
+    "name": "Arme secrète",
+    "description": "Le joueur est Expulsé à la fin d’une Phase à laquelle il participe, qu’il soit encore sur le terrain ou pas."
+  },
+  {
+    "skillId": "bombardier",
+    "name": "Bombardier",
+    "description": "Action Spéciale de Lancer de bombe (un seul Bombardier en jeu peut le faire). Doit être Debout au moment de l’activation. Les bombes sont traitées comme des ballons (pas de Rebonds) et comme une action de Passe (compétence « Sur le Ballon » non utilisable). Si Maladresse, elle explose sur place. Si échec pour Réceptionner, explose dans la case du receveur. Peut être Réceptionnée même par le possesseur du ballon. Si elle est Réceptionnée, jeter 1D6 : sur 4+, elle explose ; sur 1-3, doit être relancée. Si elle sort du terrain, elle explose dans le public. Si elle s’immobilise au sol (case inoccupée, attrapage ratée, case occupé par 1 joueur « Mis à Terre » ou « Sonné ») elle explose. Lorsqu’elle explose, tout joueur dans la case est touché, les joueurs dans les cases adjacentes sont touchés sur 4+ avec 1D6. Les joueurs touchés sont « Plaqués » et doivent faire des jets d’AR avec un bonus de +1 applicable au choix (après jet de dés) sur le jet d’AR ou de Blessure."
+  },
+  {
+    "skillId": "botter-de-coequipier",
+    "name": "Botter de Coéquipier",
+    "description": "Ne peut être utilisé que par un seul joueur de l’équipe au cours du même tour, mais en sus d’une Passe ou d’un Lancer de Coéquipier, sur un Poids Plume adjacent et Debout. S’utilise comme Lancer de Coéquipier, sauf qu’en cas de Maladresse, le Poids Plume doit faire un jet de Blessure (Sonné traité comme KO). Châtaigne est applicable par le coach adverse. Si le Poids Plume portait le ballon, il rebondit depuis la case qu’il occupait."
+  },
+  {
+    "skillId": "cerveau-lent",
+    "name": "Cerveau Lent",
+    "description": "Avant toutes actions (même si « Mis à Terre », ou sans ZdT), doit jeter 1D6. Sur 1, ne peut rien faire et perte ses ZdT. S’il s’agit d’1 Action unique (Passe, Blitz, Lancer de Coéquipier...) l’Action est perdue pour l’équipe."
+  },
+  {
+    "skillId": "chaines-et-boulet",
+    "name": "Chaînes et Boulet",
+    "description": "Ne peut se mouvoir qu’avec le Gabarit de Renvoi et 1D6 pour chaque point de M. Pas besoin de jet d’esquive. Peut se retrouver dans le public. Si traverse une case où se trouve le ballon, il rebondit. Peut « Foncer » s’il le désire. Si 1 joueur (n’importe qu’elle équipe) se trouve Debout sur 1 case où il entre, faire un test de Blocage. Les joueurs À Terre ou Sonnés sont repoussés et doivent faire un jet d’AR. Obligation de poursuivre. S’il chute, jet de Blessure direct. Sonné = KO. Frénésie, Tacle Plongeant, Projection, Saut, Blocage Multiple, Poursuite, Sur le Ballon sont interdites à ce joueur."
+  },
+  {
+    "skillId": "contagieux",
+    "name": "Contagieux",
+    "description": "1 joueur adverse tué sur un Blocage (1 fois par match) peut être intégré dans l’équipe, (placé dans le Box des Réserves et même si déjà 16 joueurs) en tant que Rotter Lineman. Doit avoir F4 ou moins et n’avoir ni Minus, ni Régénération, ni Décomposition. Peut être embauché en fin de match si effectif < ou = à 16)."
+  },
+  {
+    "skillId": "decomposition",
+    "name": "Décomposition",
+    "description": "Si une ÉLI lui est infligée, il doit ajouter +1 au jet sur le tableau dédié."
+  },
+  {
+    "skillId": "deferlement",
+    "name": "Déferlement",
+    "description": "Au début de chaque Phase, lors du Coup d’Envoi (avant le jet sur la table), le coach peut sélectionner 1D3 joueurs ayant ce trait pour les retirer des Réserves et les placer sur le terrain (hors LoS et Couloirs Latéraux) même si cela fait dépasser le nombre de 11 joueurs sur le terrain."
+  },
+  {
+    "skillId": "echasse-a-ressort",
+    "name": "Échasse à Ressort",
+    "description": "Pendant son M peut Sauter au lieu d’Enjamber, que la case soit occupée ou non, par un joueur Debout ou non. De plus, ignore tous les modificateurs liés au « Marquage » sur les cases de départ et d’arrivée. Ne peut pas avoir Saut."
+  },
+  {
+    "skillId": "fureur-debridee",
+    "name": "Fureur Débridée",
+    "description": "Avant toutes actions (même si « Mis à Terre », ou sans ZdT), jette 1D6. Sur 1-3, ne peut rien faire. S’il s’agit d’1 Action unique (Passe, Blitz, Lancer de Coéquipier...) l’Action est perdue pour l’équipe. Ajouter +2 au dé s’il s’agit d’un Blitz, d’un Blocage ou d’une Action Spéciale remplaçant le Blocage."
+  },
+  {
+    "skillId": "gerbe-de-vomi",
+    "name": "Gerbe de Vomi",
+    "description": "À la place d’un Blocage (même lors d’un Blitz), jeter 1D6. Sur 1, le joueur se vomit dessus ; sur 2+ il vomit sur son adversaire. La victime fait 1 jet d’AR. Si c’est réussi, le joueur adverse est « Mis à Terre » et subit 1 jet de Blessure. Non utilisable avec Frénésie et Blocage Multiple."
+  },
+  {
+    "skillId": "gros-debile",
+    "name": "Gros Débile",
+    "description": "Avant toutes actions (même si « Mis à Terre », ou sans ZdT), jette 1D6. Sur 1-3, ne peut rien faire. +2 au dé si des coéquipiers non Débile sont adjacents. Si échec, perd sa ZdT. S’il s’agit d’1 Action unique (Passe, Blitz, Lancer de Coéquipier...) l’Action est perdue pour l’équipe."
+  },
+  {
+    "skillId": "lancer-de-coequipier",
+    "name": "Lancer de Coéquipier",
+    "description": "Permet de Lancer un Poids Plume si F5 ou +."
+  },
+  {
+    "skillId": "microbe",
+    "name": "Microbe",
+    "description": "+1 à toutes ses Esquives. N’appliquent pas le -1 de « marquage » sur les adversaires entrant dans sa ZdT lors d’une Esquive."
+  },
+  {
+    "skillId": "minus",
+    "name": "Minus",
+    "description": "Ignore les modificateurs liés au « Marquage » quand il Esquive (sauf si Bombardier, Tronçonneuse ou Piqué). Un adversaire tentant d’Interférer avec la Passe d’un Minus reçoit +1 à son test d’AG. Les jets de Blessure se font sur 1 table dédiée."
+  },
+  {
+    "skillId": "pique",
+    "name": "Piqué",
+    "description": "Utiliser le Gabarit de Renvoi au lieu de celui de Direction Aléatoire quand ce joueur est lancé (il ne ricoche pas avant d’Atterrir), puis il se déplace de 1D3 cases dans la direction déterminée."
+  },
+  {
+    "skillId": "poids-plume",
+    "name": "Poids Plume",
+    "description": "Permet d’être lancé si F3 ou moins."
+  },
+  {
+    "skillId": "poignard",
+    "name": "Poignard",
+    "description": "Au lieu de faire un Blocage (même durant 1 Blitz), faire un jet d’AR sans modificateur. Si le test est réussi, la victime est « Mis à Terre » et subit un jet de Blessure. Si utilisé en blitz, ne peut continuer le mouvement."
+  },
+  {
+    "skillId": "prendre-racine",
+    "name": "Prendre Racine",
+    "description": "Avant toutes actions (même si « Mis à Terre », ou sans ZdT), jette 1D6. Sur 1, ne peut pas se déplacer jusqu’à la fin de la Phase ou s’il est, par la suite, « Plaqué » ou « Mis à Terre ». Ne peut faire des actions que s’il peut les faire sans se mouvoir. S’il s’agit d’1 Action unique (Passe, Blitz, Lancer de Coéquipier...) l’Action est perdue pour l’équipe si elle ne peut être réalisée sans mouvement."
+  },
+  {
+    "skillId": "regard-hypnotique",
+    "name": "Regard Hypnotique",
+    "description": "Action spéciale (peut se mouvoir avant de le réaliser) permettant de faire 1 jet d’AG avec modificateur de -1 pour chaque « Marquage » éventuel subit (sauf celui de la victime). Si réussi, la cible (doit être debout et marqué par le joueur actif) perd sa ZdT jusqu’à sa prochaine activation. Ne peut pas se mouvoir après avoir fait l’Action Spéciale."
+  },
+  {
+    "skillId": "regeneration",
+    "name": "Régénération",
+    "description": "Après avoir subit 1 ÉLI, peut jeter 1D6, Sur 4+, le joueur va en Réserves."
+  },
+  {
+    "skillId": "sans-les-mains",
+    "name": "Sans les mains",
+    "description": "Ne peut Ramasser, Réceptionner ou Interférer avec une Passe. S’il entre dans une case ou se trouve la balle, il y a TO. Le ballon rebondit lors de toute interaction avec ce joueur."
+  },
+  {
+    "skillId": "sauvagerie-animale",
+    "name": "Sauvagerie Animale",
+    "description": "Avant toutes actions (même si « Mis à Terre », ou sans ZdT), jette 1D6. Ajouter +2 au dé s’il s’agit d’un Blitz, d’un Blocage ou d’une Action Spéciale remplaçant le Blocage. Sur 1-3, 1 coéquipier adjacent est « Plaqué » (TO s’il possède la balle). Jet d’AR et de Blessure éventuel (appliquer Châtaigne, Griffes... si le Sauvage les possède). Puis le Sauvage peut continuer l’action entreprise comme s’il avait fait 4+. S’il n’y a pas de joueur adjacent, son activation se termine et perte de sa ZdT. S’il s’agit d’1 Action unique (Passe, Blitz, Lancer de Coéquipier...) l’Action est perdue pour l’équipe."
+  },
+  {
+    "skillId": "solitaire",
+    "name": "Solitaire",
+    "description": "Doit réussir un jet de 1D6 supérieur ou égal au chiffre entre parenthèse pour utiliser une relance d’équipe. En cas d’échec, la relance est dépensée sans pouvoir être utilisée."
+  },
+  {
+    "skillId": "timm-ber",
+    "name": "Timm–Ber !",
+    "description": "Si le joueur a M2 ou moins, chaque coéquipier Debout et « Démarqué » qui lui est adjacent offre +1 pour les jets permettant de se relever. Un 1 naturel est toujours un échec."
+  },
+  {
+    "skillId": "toujours-affame",
+    "name": "Toujours Affamé",
+    "description": "Si tente de Lancer 1 Coéquipier, après avoir éventuellement bougé et avant de faire le test d’AG, jeter 1D6. Sur 1, il tente de manger, jetez 1D6. Sur 1, le Poids Plume meurt ; sur 2+, le Lancer devient 1 Maladresse."
+  },
+  {
+    "skillId": "tronconneuse",
+    "name": "Tronçonneuse",
+    "description": "Au lieu de faire un Blocage (même durant 1 Blitz), jeter 1D6. Sur 2+ la cible est touchée ; sur 1 la Tronçonneuse touche le porteur. Jet d’AR avec modificateur de +3 pour la victime. Si réussite, la victime est « Mis à Terre » et subit un jet de Blessure. Une seule fois par tour (pas de Frénésie ni Blocage Multiple). Si utilisée en Blitz, ne peut continuer le mouvement. Si le porteur est « Plaqué », l’adversaire bénéficie d’un modificateur de +3 sur le jet d’AR. Peut servir lors d’1 une Agression en réussissant également un jet 2+ sur 1D6 et ajoute +3 au test contre l’AR."
   }
 ]
