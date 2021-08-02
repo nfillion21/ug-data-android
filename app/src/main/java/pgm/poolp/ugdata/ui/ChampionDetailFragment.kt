@@ -14,6 +14,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
@@ -47,7 +48,7 @@ class ChampionDetailFragment : Fragment() {
             lifecycleOwner = viewLifecycleOwner
             callback = Callback { champion ->
                 champion?.let {
-                    hideAppBarFab(fab)
+                    //hideAppBarFab(fab)
                     //championDetailViewModel.addPlantToGarden()
                     //Snackbar.make(root, R.string.added_plant_to_garden, Snackbar.LENGTH_LONG)
                         //.show()
@@ -60,12 +61,13 @@ class ChampionDetailFragment : Fragment() {
             }
 
 
-            galleryNav.setOnClickListener { navigateToGallery() }
+            //galleryNav.setOnClickListener { navigateToGallery() }
 
             var isToolbarShown = false
 
             // scroll change listener begins at Y = 0 when image is fully collapsed
-            plantDetailScrollview.setOnScrollChangeListener(
+            /*
+            championDetailList.setOnScrollChangeListener(
                 NestedScrollView.OnScrollChangeListener { _, _, scrollY, _, _ ->
 
                     // User scrolled past image to height of toolbar and the title text is
@@ -85,8 +87,40 @@ class ChampionDetailFragment : Fragment() {
                     }
                 }
             )
+            */
 
-            toolbar.setNavigationOnClickListener { view ->
+            championDetailList.addOnScrollListener(object : RecyclerView.OnScrollListener()
+            {
+                override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int)
+                {
+                    super.onScrolled(recyclerView, dx, dy)
+
+
+                    // User scrolled past image to height of toolbar and the title text is
+                    // underneath the toolbar, so the toolbar should be shown.
+                    val shouldShowToolbar = dy > toolbar.height
+
+                    // The new state of the toolbar differs from the previous state; update
+                    // appbar and toolbar attributes.
+                    if (isToolbarShown != shouldShowToolbar) {
+                        isToolbarShown = shouldShowToolbar
+
+                        // Use shadow animator to add elevation if toolbar is shown
+                        appbar.isActivated = shouldShowToolbar
+
+                        // Show the plant name if toolbar is shown
+                        toolbarLayout.isTitleEnabled = shouldShowToolbar
+                    }
+
+                }
+            })
+
+
+
+
+
+
+        toolbar.setNavigationOnClickListener { view ->
                 view.findNavController().navigateUp()
             }
         }
