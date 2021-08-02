@@ -1,24 +1,20 @@
 package pgm.poolp.ugdata.ui
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.coordinatorlayout.widget.CoordinatorLayout
-import androidx.core.app.ShareCompat
-import androidx.core.widget.NestedScrollView
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.lifecycleScope
 import androidx.navigation.findNavController
-import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.launch
 import pgm.poolp.ugdata.R
+import pgm.poolp.ugdata.adapters.ChampionDetailListAdapter
+import pgm.poolp.ugdata.adapters.SkillListAdapter
 import pgm.poolp.ugdata.data.Champion
 import pgm.poolp.ugdata.databinding.FragmentChampionDetailBinding
 import pgm.poolp.ugdata.ui.ChampionDetailFragment.Callback
@@ -32,8 +28,7 @@ class ChampionDetailFragment : Fragment() {
 
     private val championDetailViewModel: ChampionDetailViewModel by viewModels()
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
+    override fun onCreateView(inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
@@ -51,19 +46,19 @@ class ChampionDetailFragment : Fragment() {
                     //hideAppBarFab(fab)
                     //championDetailViewModel.addPlantToGarden()
                     //Snackbar.make(root, R.string.added_plant_to_garden, Snackbar.LENGTH_LONG)
-                        //.show()
-                    /*
-                    val skills = championDetailViewModel.championWithSkills
-                    val skills2 = championDetailViewModel.championWithSkills
-                     */
-
+                    //.show()
                 }
             }
 
+            val adapter = ChampionDetailListAdapter()
+            championDetailList.adapter = adapter
+            championDetailViewModel.championWithSkills.observe(viewLifecycleOwner) { championWithSkills ->
+                adapter.submitList(championWithSkills.skills)
+            }
 
             //galleryNav.setOnClickListener { navigateToGallery() }
 
-            var isToolbarShown = false
+            //var isToolbarShown = false
 
             // scroll change listener begins at Y = 0 when image is fully collapsed
             /*
@@ -89,12 +84,12 @@ class ChampionDetailFragment : Fragment() {
             )
             */
 
+            /*
             championDetailList.addOnScrollListener(object : RecyclerView.OnScrollListener()
             {
                 override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int)
                 {
                     super.onScrolled(recyclerView, dx, dy)
-
 
                     // User scrolled past image to height of toolbar and the title text is
                     // underneath the toolbar, so the toolbar should be shown.
@@ -109,18 +104,13 @@ class ChampionDetailFragment : Fragment() {
                         appbar.isActivated = shouldShowToolbar
 
                         // Show the plant name if toolbar is shown
-                        toolbarLayout.isTitleEnabled = shouldShowToolbar
+                        toolbarLayout.isTitleEnabled = !shouldShowToolbar
                     }
-
                 }
             })
+            */
 
-
-
-
-
-
-        toolbar.setNavigationOnClickListener { view ->
+            toolbar.setNavigationOnClickListener { view ->
                 view.findNavController().navigateUp()
             }
         }
@@ -136,6 +126,7 @@ class ChampionDetailFragment : Fragment() {
 
         return binding.root
     }
+
 
     private fun navigateToGallery() {
         /*
