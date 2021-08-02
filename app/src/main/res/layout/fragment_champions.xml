@@ -40,7 +40,7 @@ xmlns:tools="http://schemas.android.com/tools">
         android:paddingStart="@dimen/card_side_margin"
         android:paddingTop="@dimen/header_margin"
         app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
-        app:spanCount="@integer/grid_columns"
+        app:spanCount="@integer/grid_champion_columns"
         tools:context="pgm.poolp.ugdata.MainActivity"
         tools:listitem="@layout/list_item_champion"/>
 

@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/card_side_margin"
         android:layout_marginEnd="@dimen/card_side_margin"
-        android:layout_marginBottom="@dimen/card_bottom_margin"
+        android:layout_marginBottom="@dimen/margin_normal"
         android:onClick="@{clickListener}"
         app:cardElevation="@dimen/card_elevation"
         app:cardPreventCornerOverlap="false"
@@ -43,7 +43,8 @@
                 android:id="@+id/skill_item_title"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal|center_vertical"
+                android:gravity="center_vertical"
+                android:padding="@dimen/margin_small"
                 android:text="@{skill.name}"
                 android:textAppearance="?attr/textAppearanceListItem"
                 

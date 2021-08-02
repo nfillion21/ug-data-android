@@ -17,7 +17,8 @@
 
 <resources>
 
-    <!-- Number of columns for garden and plant list grid -->
-    <integer name="grid_columns">2</integer>
+    <!-- Number of columns for champion and skill list grid -->
+    <integer name="grid_champion_columns">2</integer>
+    <integer name="grid_skill_columns">1</integer>
 
 </resources>
