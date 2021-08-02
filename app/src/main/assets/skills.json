@@ -35,14 +35,14 @@
     "description": "En cas de « Les Deux Plaqués », (s’il fait ou subit un Blocage), peut décider que les deux joueurs sont « Mis à Terre » (pas de jet d’AR)."
   },
   {
+    "skillId": "parade",
+    "name": "Parade",
+    "description": "Annule la possibilité pour son adversaire de le poursuivre suite à un Blocage. L’adversaire peut continuer à se mouvoir lors des Blitz. Non utilisable vs Chaîne & Boulet et Juggernaut en Blitz."
+  },
+  {
     "skillId": "poursuite",
     "name": "Poursuite",
     "description": "Permet de suivre un adversaire que le joueur « Marque » et qui se déplace volontairement hors de sa ZdT. Jetez (1D6+M)–M adverse : si 6+ ou si 6 naturel, le joueur se déplace dans la case laissée vacante ; si 5 ou moins, ou 1 naturel, rien ne se passe. Utilisable plusieurs fois par tour (d’équipe ou adverse). Si plusieurs joueurs avec Poursuite marquent le joueur adverse, un seul d’entre eux peut utiliser la compétence."
-  },
-  {
-    "skillId": "prise-sure",
-    "name": "Prise sûre",
-    "description": "Relance d’un échec pour Ramasser le Ballon. Annule Arracher le Ballon."
   },
   {
     "skillId": "prise-sure",

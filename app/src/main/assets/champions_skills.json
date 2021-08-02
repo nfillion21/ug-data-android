@@ -1,18 +1,721 @@
 [
   {
-    "championId": "boomer-eziasson",
-    "skillId": "pourriture-de-nurgle"
+    "championId": "akhorne-l-ecureuil",
+    "skillId": "griffes"
+  },
+  {
+    "championId": "akhorne-l-ecureuil",
+    "skillId": "intrepide"
+  },
+  {
+    "championId": "akhorne-l-ecureuil",
+    "skillId": "esquive"
+  },
+  {
+    "championId": "akhorne-l-ecureuil",
+    "skillId": "frenesie"
+  },
+  {
+    "championId": "akhorne-l-ecureuil",
+    "skillId": "retablissement"
+  },
+  {
+    "championId": "akhorne-l-ecureuil",
+    "skillId": "solitaire"
+  },
+  {
+    "championId": "akhorne-l-ecureuil",
+    "skillId": "sans-les-mains"
+  },
+  {
+    "championId": "akhorne-l-ecureuil",
+    "skillId": "glissade-controlee"
+  },
+  {
+    "championId": "akhorne-l-ecureuil",
+    "skillId": "minus"
+  },
+  {
+    "championId": "akhorne-l-ecureuil",
+    "skillId": "microbe"
+  },
+
+  {
+    "championId": "the-black-gobbo",
+    "skillId": "bombardier"
+  },
+  {
+    "championId": "the-black-gobbo",
+    "skillId": "presence-perturbante"
+  },
+  {
+    "championId": "the-black-gobbo",
+    "skillId": "esquive"
+  },
+  {
+    "championId": "the-black-gobbo",
+    "skillId": "solitaire"
+  },
+  {
+    "championId": "the-black-gobbo",
+    "skillId": "glissade-controlee"
+  },
+  {
+    "championId": "the-black-gobbo",
+    "skillId": "sournois"
+  },
+  {
+    "championId": "the-black-gobbo",
+    "skillId": "poignard"
+  },
+  {
+    "championId": "the-black-gobbo",
+    "skillId": "minus"
+  },
+
+  {
+    "championId": "bryce-the-slice-cambuel",
+    "skillId": "tronconneuse"
+  },
+  {
+    "championId": "bryce-the-slice-cambuel",
+    "skillId": "solitaire"
+  },
+  {
+    "championId": "bryce-the-slice-cambuel",
+    "skillId": "regeneration"
+  },
+  {
+    "championId": "bryce-the-slice-cambuel",
+    "skillId": "arme-secrete"
+  },
+  {
+    "championId": "bryce-the-slice-cambuel",
+    "skillId": "stabilite"
+  },
+  {
+    "championId": "bryce-the-slice-cambuel",
+    "skillId": "crane-epais"
+  },
+
+  {
+    "championId": "deeproot-strongbranch",
+    "skillId": "blocage"
+  },
+  {
+    "championId": "deeproot-strongbranch",
+    "skillId": "solitaire"
+  },
+  {
+    "championId": "deeproot-strongbranch",
+    "skillId": "chataigne"
+  },
+  {
+    "championId": "deeproot-strongbranch",
+    "skillId": "stabilite"
+  },
+  {
+    "championId": "deeproot-strongbranch",
+    "skillId": "bras-muscle"
+  },
+  {
+    "championId": "deeproot-strongbranch",
+    "skillId": "crane-epais"
+  },
+  {
+    "championId": "deeproot-strongbranch",
+    "skillId": "lancer-de-coequipier"
+  },
+  {
+    "championId": "deeproot-strongbranch",
+    "skillId": "timm-ber"
+  },
+
+  {
+    "championId": "eldril-sidewinder",
+    "skillId": "solitaire"
+  },
+  {
+    "championId": "eldril-sidewinder",
+    "skillId": "esquive"
+  },
+  {
+    "championId": "eldril-sidewinder",
+    "skillId": "nerfs-d-acier"
+  },
+  {
+    "championId": "eldril-sidewinder",
+    "skillId": "reception"
+  },
+  {
+    "championId": "eldril-sidewinder",
+    "skillId": "regard-hypnotique"
+  },
+  {
+    "championId": "eldril-sidewinder",
+    "skillId": "sur-le-ballon"
+  },
+
+  {
+    "championId": "franck-n-stein",
+    "skillId": "esquive-en-force"
+  },
+  {
+    "championId": "franck-n-stein",
+    "skillId": "solitaire"
+  },
+  {
+    "championId": "franck-n-stein",
+    "skillId": "chataigne"
+  },
+  {
+    "championId": "franck-n-stein",
+    "skillId": "regeneration"
+  },
+  {
+    "championId": "franck-n-stein",
+    "skillId": "stabilite"
+  },
+  {
+    "championId": "franck-n-stein",
+    "skillId": "crane-epais"
+  },
+
+  {
+    "championId": "glart-smahrip",
+    "skillId": "blocage"
+  },
+  {
+    "championId": "glart-smahrip",
+    "skillId": "griffes"
+  },
+  {
+    "championId": "glart-smahrip",
+    "skillId": "juggernaut"
+  },
+  {
+    "championId": "glart-smahrip",
+    "skillId": "projection"
+  },
+  {
+    "championId": "glart-smahrip",
+    "skillId": "solitaire"
+  },
+  {
+    "championId": "glart-smahrip",
+    "skillId": "stabilite"
+  },
+
+  {
+    "championId": "gloriel-summerbloom",
+    "skillId": "precision"
+  },
+  {
+    "championId": "gloriel-summerbloom",
+    "skillId": "esquive"
+  },
+  {
+    "championId": "gloriel-summerbloom",
+    "skillId": "solitaire"
+  },
+  {
+    "championId": "gloriel-summerbloom",
+    "skillId": "passe"
+  },
+  {
+    "championId": "gloriel-summerbloom",
+    "skillId": "glissade-controlee"
+  },
+  {
+    "championId": "gloriel-summerbloom",
+    "skillId": "prise-sure"
+  },
+
+  {
+    "championId": "grak-and-crumbleberry",
+    "skillId": "cerveau-lent"
+  },
+  {
+    "championId": "grak-and-crumbleberry",
+    "skillId": "chataigne"
+  },
+  {
+    "championId": "grak-and-crumbleberry",
+    "skillId": "crane-epais"
+  },
+  {
+    "championId": "grak-and-crumbleberry",
+    "skillId": "botter-de-coequipier"
+  },
+  {
+    "championId": "grak-and-crumbleberry",
+    "skillId": "solitaire"
+  },
+  {
+    "championId": "grak-and-crumbleberry",
+    "skillId": "esquive"
+  },
+  {
+    "championId": "grak-and-crumbleberry",
+    "skillId": "minus"
+  },
+  {
+    "championId": "grak-and-crumbleberry",
+    "skillId": "poids-plume"
+  },
+  {
+    "championId": "grak-and-crumbleberry",
+    "skillId": "prise-sure"
+  },
+
+  {
+    "championId": "gretchen-wachter",
+    "skillId": "presence-perturbante"
+  },
+  {
+    "championId": "gretchen-wachter",
+    "skillId": "esquive"
+  },
+  {
+    "championId": "gretchen-wachter",
+    "skillId": "repulsion"
+  },
+  {
+    "championId": "gretchen-wachter",
+    "skillId": "retablissement"
+  },
+  {
+    "championId": "gretchen-wachter",
+    "skillId": "solitaire"
+  },
+  {
+    "championId": "gretchen-wachter",
+    "skillId": "sans-les-mains"
+  },
+  {
+    "championId": "gretchen-wachter",
+    "skillId": "regeneration"
+  },
+  {
+    "championId": "gretchen-wachter",
+    "skillId": "poursuite"
+  },
+  {
+    "championId": "gretchen-wachter",
+    "skillId": "glissade-controlee"
+  },
+
+  {
+    "championId": "griff-oberwalf",
+    "skillId": "solitaire"
+  },
+  {
+    "championId": "griff-oberwalf",
+    "skillId": "blocage"
+  },
+  {
+    "championId": "griff-oberwalf",
+    "skillId": "equilibre"
+  },
+  {
+    "championId": "griff-oberwalf",
+    "skillId": "esquive"
+  },
+  {
+    "championId": "griff-oberwalf",
+    "skillId": "parade"
+  },
+  {
+    "championId": "griff-oberwalf",
+    "skillId": "sprint"
+  },
+
+  {
+    "championId": "grim-ironjaw",
+    "skillId": "solitaire"
+  },
+  {
+    "championId": "grim-ironjaw",
+    "skillId": "blocage"
+  },
+  {
+    "championId": "grim-ironjaw",
+    "skillId": "intrepide"
+  },
+  {
+    "championId": "grim-ironjaw",
+    "skillId": "frenesie"
+  },
+  {
+    "championId": "grim-ironjaw",
+    "skillId": "blocage-multiple"
+  },
+  {
+    "championId": "grim-ironjaw",
+    "skillId": "crane-epais"
+  },
+
+  {
+    "championId": "hakflem-skuttlespike",
+    "skillId": "solitaire"
+  },
+  {
+    "championId": "hakflem-skuttlespike",
+    "skillId": "bras-supplementaires"
+  },
+  {
+    "championId": "hakflem-skuttlespike",
+    "skillId": "deux-tetes"
+  },
+  {
+    "championId": "hakflem-skuttlespike",
+    "skillId": "esquive"
+  },
+  {
+    "championId": "hakflem-skuttlespike",
+    "skillId": "queue-prehensile"
+  },
+
+  {
+    "championId": "helmutt-wolf",
+    "skillId": "tronconneuse"
+  },
+  {
+    "championId": "helmutt-wolf",
+    "skillId": "solitaire"
+  },
+  {
+    "championId": "helmutt-wolf",
+    "skillId": "arme-secrete"
+  },
+  {
+    "championId": "helmutt-wolf",
+    "skillId": "pro"
+  },
+  {
+    "championId": "helmutt-wolf",
+    "skillId": "stabilite"
+  },
+
+  {
+    "championId": "karla-von-kill",
+    "skillId": "blocage"
+  },
+  {
+    "championId": "karla-von-kill",
+    "skillId": "intrepide"
+  },
+  {
+    "championId": "karla-von-kill",
+    "skillId": "esquive"
+  },
+  {
+    "championId": "karla-von-kill",
+    "skillId": "retablissement"
+  },
+  {
+    "championId": "karla-von-kill",
+    "skillId": "solitaire"
+  },
+
+  {
+    "championId": "lord-borak-the-despoiler",
+    "skillId": "blocage"
+  },
+  {
+    "championId": "lord-borak-the-despoiler",
+    "skillId": "chataigne"
+  },
+  {
+    "championId": "lord-borak-the-despoiler",
+    "skillId": "joueur-deloyal"
+  },
+  {
+    "championId": "lord-borak-the-despoiler",
+    "skillId": "solitaire"
+  },
+  {
+    "championId": "lord-borak-the-despoiler",
+    "skillId": "sournois"
+  },
+
+  {
+    "championId": "mighty-zug",
+    "skillId": "solitaire"
   },
   {
     "championId": "mighty-zug",
-    "skillId": "animal-sauvage"
+    "skillId": "blocage"
   },
   {
     "championId": "mighty-zug",
-    "skillId": "lancer-un-coequipier"
+    "skillId": "chataigne"
+  },
+
+  {
+    "championId": "morg-n-thorg",
+    "skillId": "solitaire"
   },
   {
-    "championId": "barik-farblast",
-    "skillId": "chaine-et-boulet"
+    "championId": "morg-n-thorg",
+    "skillId": "blocage"
+  },
+  {
+    "championId": "morg-n-thorg",
+    "skillId": "chataigne"
+  },
+  {
+    "championId": "morg-n-thorg",
+    "skillId": "crane-epais"
+  },
+  {
+    "championId": "morg-n-thorg",
+    "skillId": "lancer-de-coequipier"
+  },
+
+  {
+    "championId": "roxanna-darknail",
+    "skillId": "solitaire"
+  },
+  {
+    "championId": "roxanna-darknail",
+    "skillId": "esquive"
+  },
+  {
+    "championId": "roxanna-darknail",
+    "skillId": "frenesie"
+  },
+  {
+    "championId": "roxanna-darknail",
+    "skillId": "retablissement"
+  },
+  {
+    "championId": "roxanna-darknail",
+    "skillId": "juggernaut"
+  },
+  {
+    "championId": "roxanna-darknail",
+    "skillId": "saut"
+  },
+
+  {
+    "championId": "rumbelow-sheepskin",
+    "skillId": "blocage"
+  },
+  {
+    "championId": "rumbelow-sheepskin",
+    "skillId": "cornes"
+  },
+  {
+    "championId": "rumbelow-sheepskin",
+    "skillId": "juggernaut"
+  },
+  {
+    "championId": "rumbelow-sheepskin",
+    "skillId": "solitaire"
+  },
+  {
+    "championId": "rumbelow-sheepskin",
+    "skillId": "sans-les-mains"
+  },
+  {
+    "championId": "rumbelow-sheepskin",
+    "skillId": "tacle"
+  },
+  {
+    "championId": "rumbelow-sheepskin",
+    "skillId": "crane-epais"
+  },
+
+  {
+    "championId": "skrull-halfheight",
+    "skillId": "precision"
+  },
+  {
+    "championId": "skrull-halfheight",
+    "skillId": "solitaire"
+  },
+  {
+    "championId": "skrull-halfheight",
+    "skillId": "nerfs-d-acier"
+  },
+  {
+    "championId": "skrull-halfheight",
+    "skillId": "passe"
+  },
+  {
+    "championId": "skrull-halfheight",
+    "skillId": "regeneration"
+  },
+  {
+    "championId": "skrull-halfheight",
+    "skillId": "prise-sure"
+  },
+  {
+    "championId": "skrull-halfheight",
+    "skillId": "crane-epais"
+  },
+
+  {
+    "championId": "lucien-and-valen-swift",
+    "skillId": "blocage"
+  },
+  {
+    "championId": "lucien-and-valen-swift",
+    "skillId": "solitaire"
+  },
+  {
+    "championId": "lucien-and-valen-swift",
+    "skillId": "chataigne"
+  },
+  {
+    "championId": "lucien-and-valen-swift",
+    "skillId": "tacle"
+  },
+  {
+    "championId": "lucien-and-valen-swift",
+    "skillId": "precision"
+  },
+  {
+    "championId": "lucien-and-valen-swift",
+    "skillId": "nerfs-d-acier"
+  },
+  {
+    "championId": "lucien-and-valen-swift",
+    "skillId": "passe-assuree"
+  },
+  {
+    "championId": "lucien-and-valen-swift",
+    "skillId": "passe"
+  },
+  {
+    "championId": "lucien-and-valen-swift",
+    "skillId": "prise-sure"
+  },
+
+  {
+    "championId": "varag-ghoul-shewer",
+    "skillId": "solitaire"
+  },
+  {
+    "championId": "varag-ghoul-shewer",
+    "skillId": "blocage"
+  },
+  {
+    "championId": "varag-ghoul-shewer",
+    "skillId": "retablissement"
+  },
+  {
+    "championId": "varag-ghoul-shewer",
+    "skillId": "chataigne"
+  },
+  {
+    "championId": "varag-ghoul-shewer",
+    "skillId": "crane-epais"
+  },
+
+  {
+    "championId": "whilhelm-chaney",
+    "skillId": "reception"
+  },
+  {
+    "championId": "whilhelm-chaney",
+    "skillId": "griffes"
+  },
+  {
+    "championId": "whilhelm-chaney",
+    "skillId": "frenesie"
+  },
+  {
+    "championId": "whilhelm-chaney",
+    "skillId": "solitaire"
+  },
+  {
+    "championId": "whilhelm-chaney",
+    "skillId": "regeneration"
+  },
+  {
+    "championId": "whilhelm-chaney",
+    "skillId": "lutte"
+  },
+
+  {
+    "championId": "grombrindal-the-white-dwarf",
+    "skillId": "blocage"
+  },
+  {
+    "championId": "grombrindal-the-white-dwarf",
+    "skillId": "intrepide"
+  },
+  {
+    "championId": "grombrindal-the-white-dwarf",
+    "skillId": "solitaire"
+  },
+  {
+    "championId": "grombrindal-the-white-dwarf",
+    "skillId": "chataigne"
+  },
+  {
+    "championId": "grombrindal-the-white-dwarf",
+    "skillId": "stabilite"
+  },
+  {
+    "championId": "grombrindal-the-white-dwarf",
+    "skillId": "crane-epais"
+  },
+
+  {
+    "championId": "willow-rosebark",
+    "skillId": "intrepide"
+  },
+  {
+    "championId": "willow-rosebark",
+    "skillId": "solitaire"
+  },
+  {
+    "championId": "willow-rosebark",
+    "skillId": "glissade-controlee"
+  },
+  {
+    "championId": "willow-rosebark",
+    "skillId": "crane-epais"
+  },
+
+  {
+    "championId": "zolcath-le-zoat",
+    "skillId": "presence-perturbante"
+  },
+  {
+    "championId": "zolcath-le-zoat",
+    "skillId": "juggernaut"
+  },
+  {
+    "championId": "zolcath-le-zoat",
+    "skillId": "solitaire"
+  },
+  {
+    "championId": "zolcath-le-zoat",
+    "skillId": "chataigne"
+  },
+  {
+    "championId": "zolcath-le-zoat",
+    "skillId": "queue-prehensile"
+  },
+  {
+    "championId": "zolcath-le-zoat",
+    "skillId": "regeneration"
+  },
+  {
+    "championId": "zolcath-le-zoat",
+    "skillId": "equilibre"
   }
+
+
+
+
+
+
+
+
+
 ]
