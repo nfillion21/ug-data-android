@@ -16,4 +16,7 @@
     <string name="watering_needs_prefix" translation_description="Prefix for the text describing how often a plant should be watered. Used in combination with watering_needs_suffix.">Watering needs</string>
 
     <string name="gallery_content_description" translation_description="Content description for the clickable image to navigate to the gallery screen">Navigate to gallery screen</string>
+
+    <string name="champion_detail_description" >Description</string>
+    <string name="champion_detail_skills">Skills</string>
 </resources>

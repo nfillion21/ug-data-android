@@ -2,136 +2,162 @@
   {
     "championId": "akhorne-l-ecureuil",
     "name": "Akhorne l'Écureuil",
+    "description": "",
     "imageUrl": "http://www.ug-data.xyz/akhorne-l-ecureuil/akhorne02.png"
   },
   {
     "championId": "the-black-gobbo",
     "name": "The Black Gobbo",
+    "description": "The Black Gobbo is legendarily devious, as evidenced by his countless elaborate schemes to undermine the White Dwarf. Before he even thinks about setting foot on the pitch, it’s a given that he will have already established a web of bribery, hostage-taking and other sneakiness that ensures the cooperation of the match officials.",
     "imageUrl": "http://www.ug-data.xyz/the-black-gobbo/blackgobbo01.jpeg"
   },
   {
     "championId": "bryce-the-slice-cambuel",
     "name": "Bryce \"The Slice\" Cambuel",
+    "description": "Bryce Cambuel, aka Bryce the Slice, is a chainsaw wielding skeleton who originally played with the Ostermark Bulls. Currently, Cambuel is a free agent who loans his services to Undead and Tomb Kings teams.<br><br>Bryce Cambuel began his career with the Ostermark Bulls as a chainsaw wielder in the 2480s, until he tripped and was decapitated in 2484. Raised from the dead as a skeleton, Cambuel is now a free agent.<br><br>Almost nothing is known of Bryce Cambuel except that he is an expert chainsaw wielder as long as he doesn't trip.",
     "imageUrl": "http://www.ug-data.xyz/bryce-the-slice-cambuel/bryce01.jpeg"
   },
   {
     "championId": "deeproot-strongbranch",
     "name": "Deeproot Strongbranch",
+    "description": "Deeproot Strongbranch is a Treeman, known as the first of his kind to ever play Blood Bowl. He debuted for the Greenfield Grasshuggers and lends his services only to Halfling teams.<br><br>Deeproot Strongbranch began his professional career with the greenfield Grasshuggers in 2423. In 2434, the Grasshuggers became the first, and only, team to score two touchdowns without the ball touching the ground, thanks to key Halfling flings from Strongbranch. The Treeman also helped to lead the Grasshuggers to win the Thimble Cup in 2436, and other tournament championships such as the Fighting Cockerel Classic and Little Big Tour.<br><br>Deeproot Strongbranch is from the Altern Forest and became the first Treeman ever to play Blood Bowl. Strongbranch is active in giving aid and training to Treemen and Halflings who wish to play Blood bowl. In 2482, Strongbranch was instrumental in helping to convince the NAF to limit teams to 16 players and allow two Treemen on a Halfling team after the massacre the Grasshuggers by the Asgard Ravens.",
     "imageUrl": "http://www.ug-data.xyz/deeproot-strongbranch/deeproot01.jpeg"
   },
   {
     "championId": "eldril-sidewinder",
     "name": "Eldril Sidewinder",
-    "imageUrl": "http://www.ug-data.xyz/eldril-sidewinder/eldril01.jpeg"
+    "description": "Eldril Sidewinder is a Sea Elf Wardancer who initially played for the Galadrieth Gladiators. Heis now a freelance star player who loans his services to Dark Elf, Elven Union, High Elf, and Wood Elf teams.<br><br>In 2485, Eldril Sidewinder helped to lead the Galadrieth Gladiators to victory in the Chaos Cup Championship. After his run-in with Tzeentch, the Chaos God of Change, Eldril went freelance lending out his talents to all Elven teams. He has played for numerous Elven teams, most notably for the Caledor Dragons, and was offered captaincy of a Se Elf team- the Unsettled Sea, but has not accepted as of yet.<br><br>When Tzeentch \"gifted\" Eldril with his chaotic touch in 2485, Eldril's mind was wiped and he has no knowledge of his history before that fateful Chaos Cup. Eldril is cursed so that every morning when he awakes, Eldril believes he is a member of the race of Elves playing closest to him, whether it's High Elves, Dark Elves, Wood Elves, or a member of the Elven Union. Another \"gift\" given by the Chaos God of Change, Eldril has a mesmerizing stare, or hypnotic gaze, that is capable of giving an opponent temporary amnesia so they forget temporarily what they are doing.", "imageUrl": "http://www.ug-data.xyz/eldril-sidewinder/eldril01.jpeg"
   },
   {
     "championId": "franck-n-stein",
     "name": "Franck N Stein",
+    "description": "The Bruendar Grimjacks were the very first team to experiment with using Flesh Golems instead of Mummies. A long time fan of the team, the Dark Elf Sorcerer, Marishel, created the golem known as Frank N. Stein and presented him to the Grimjacks and while Frank has seen better days (we've lost count of the replacement limbs) everyone recognises the most famous Golem of them all when he lurches into the stadium. Twice winners of the Dungeonbowl in 2481 and 2483, Frank has led the team to some stunning victories over some of the biggest names.",
     "imageUrl": "http://www.ug-data.xyz/franck-n-stein/frank01.jpeg"
   },
   {
     "championId": "glart-smahrip",
     "name": "Glart Smahrip",
+    "description": "2469 ~ Minotaur legend, Massif \"Hungry\" Bovine achieves the record for heaviest player to take part in the Blood Bowl final, gaining fame and fortune. Deep in an underground brood-pit, a young Glart Smashrip sits in front of a Cabalvision broadcast and swears that he'll someday hold the record himself. Only a handful of his broodmates survive the subsequent feeding frenzy.<br><br>2472 ~ A now impressively obese Smashrip attends the tryouts for the Warpfire Wanderers, but is laughed out of the line-up. His chances aren't improved when he eats the team's assistant coach to prove a point, but news travels fast, and it isn't long before the Skavenblight Scramblers scout him out and offer him a place on their roster.<br><br>2475 ~ Although Glart moves too slowly for his rise to be called \"meteoric\", he begins to build a devoted fanbase. They refer to themselves as \"Glart's Gluttons\" and seek to emulate his lifestyle wherever possible. The Skavenblight Scramblers' match rider is amended to include a clause stating that the stands must be suitably reinforced in their half of the stadium.<br><br>2485 ~ In a now famous match against the Darkside Cowboys, Glart is sent off for chewing on a fallen player, and responds by guzzling down the referee. Despite the howls of approval from the crowd, he is removed from play by force and issued a lifetime ban. He vanishes form the public eye.<br><br>2486 ~ In Smashrip's absence, a number of imitators come forward to capitalize on his popularity, often claiming to be members of his brood. The Gluttons are divided between those who allow these replacements a place in their hearts, and those who stubbornly refuse to accept imitations and start a petition to get their hero reinstated.<br><br>2488 ~ In an unprecedented u-turn, the NAF listens to the fans and annuls the lifetime ban. Smashrip comes out of his self-imposed exile and returns to the field; perhaps a little more grey around the whiskers than before, but somehow even more colossal in girth. Rather than rejoin his old team, he makes himself available as a free agent and is bombarded with offers.",
     "imageUrl": "http://www.ug-data.xyz/glart-smahrip/glart01.jpeg"
   },
   {
     "championId": "gloriel-summerbloom",
     "name": "Gloriel Summerbloom",
+    "description": "Gloriel Summerbloom is a Wood Elf thrower, debuting for Laurelorn Paladins. She currently is a free agent lending herself to any Wood elf team.<br><br>Summerbloom started for the Laurelorn Paladins and has since become a free agent as a prolific thrower for Wood Elf teams.<br><br>Summerbloom has been known to speak about finding Blood Bowl distasteful with its violence. However, she continues to play to inject serenity and harmonious play to help curb the cruder aspects of the sport.",
     "imageUrl": "http://www.ug-data.xyz/gloriel-summerbloom/gloriel03.jpeg"
   },
   {
     "championId": "grak-and-crumbleberry",
     "name": "Grak & Crumbleberry",
+    "description": "",
     "imageUrl": "http://www.ug-data.xyz/grak-and-crumbleberry/grak01.jpeg"
   },
   {
     "championId": "gretchen-wachter",
     "name": "Gretchen Wächter",
+    "description": "Gretchen Wächter, also known as the \"Blood Bowl Widow,\" is a banshee who started her career with the Forlorn Phantoms until they disbanded. She now is a free agent who plays for Necromantic Horror, Shambling Undead, and Vampire team. Currently, Wächter holds the record for the most eardrums burst during a game at 77.<br><br>Gretchen Wächter began her career in 2492 when she was summoned by Dirk the Abhorrent, a necromancer who was also the owner of the Forlorn Phantoms. Although she was able to secure a few wins for the team, the Phantoms disbanded in 2494 due to financial hardships, Wächter became a free agent.<br><br>In life, Gretchen Wächter was married for a long time to an obsessed Marauders Blood Bowl fan, Norbert Wächter, and became severely neglected almost immediately. She began to incubate an impressive hatred towards Blood Bowl and all those who enjoyed it. When she passed away in 2490, Wächter was buried in the Marauders home team kit, but her spirit aggressively manifested and chased her husband down the streets.<br><br>In 2492, Dirk the Abhorrent summoned her spirit to become a powerful player on his new team, the Forlorn Phantoms, as he figured she would make short work of opposing players, using her hatred as a weapon.",
     "imageUrl": "http://www.ug-data.xyz/gretchen-wachter/gretchen01.jpeg"
   },
   {
     "championId": "griff-oberwalf",
     "name": "Griff Oberwald",
+    "description": "Griff Oberwald is the team captain and star blitzer of the Bögenhafen Barons. Oberwald is easily the most recognizable face for Human teams, especially considering his accolades and sponsorships with multiple companies. He helped to gain the Reikland Reavers three Blood Bowl Championships and four AFC championship titles.<br><br>When Griff Oberwald first played for the Reikland Reavers, it was recorded that head coach, Helmut Zwimmer, said, \"Zat boy is almost above average.<br><br>First coming to the attention of the Reavers' fans in 2483, after making a tackle play resulting in three ears and a nose from the opposition caused a two-game suspension, Oberwald garnered a first team position due to hard work and training.<br><br>Alongside his half-cousin, Orlak Sturmdrang, Oberwald earned the Best Newcomer Medal in his second season with the Reavers. The award was rightly given, considering he scored the winning touchdown versus the Darkside Cowboys in Blood Bowl XXV, helping the Reavers to gain their third Blood Bowl Cup.<br><br>Captain Sturmdrang stepped down as team captain and in the second match of the 2487-2488 season, Oberwald was promoted. In the same year, Oberwald led the Reavers to their fourth Blood Bowl Cup, and received the AFC Player of the Year award.<br><br>However, following the Reavers' victory at the 2499 Blood Bowl, Griff shocked the Old World when he refused to sign a new contract with his boyhood team. Instead, Griff joined the relatively new Bögenhafen Barons in an incredibly lucrative contract that made him one of the best payed players in the game. Though it is said that this move was due to Griff beginning to feel his age and he wanted to wind down his career, Griff has since proved his doubters wrong; guiding the Barons to the XL Blood Bowl and into the annals of Blood Bowl history.",
     "imageUrl": "http://www.ug-data.xyz/griff-oberwalf/griff01.jpeg"
   },
   {
     "championId": "grim-ironjaw",
     "name": "Grim Ironjaw",
+    "description": "The tomato is the edible, often red, berry of the nightshade Solanum lycopersicum, commonly known as a tomato plant. The species originated in western South America. The Nahuatl (Aztec language) word tomatl gave rise to the Spanish word tomate, from which the English word tomato derived. Its use as a cultivated food may have originated with the indigenous peoples of Mexico. The Spanish encountered the tomato from their contact with the Aztec during the Spanish colonization of the Americas and brought it to Europe. From there, the tomato was introduced to other parts of the European-colonized world during the 16th century.<br><br>The tomato is consumed in diverse ways, raw or cooked, in many dishes, sauces, salads, and drinks. While tomatoes are fruits – botanically classified as berries – they are commonly used as a vegetable ingredient or side dish.<br><br>Numerous varieties of the tomato plant are widely grown in temperate climates across the world, with greenhouses allowing for the production of tomatoes throughout all seasons of the year. Tomato plants typically grow to 1–3 meters (3–10 ft) in height. They are vines that have a weak stem that sprawls and typically needs support. Indeterminate tomato plants are perennials in their native habitat, but are cultivated as annuals. Determinate, or bush, plants are annuals that stop growing at a certain height and produce a crop all at once. The size of the tomato varies according to the cultivar, with a range of 0.5–4 inches (1.3–10.2 cm) in width.<br><br>(From <a href=\"https://en.wikipedia.org/wiki/Tomato\">Wikipedia</a>)",
     "imageUrl": "http://www.ug-data.xyz/grim-ironjaw/grim01.jpg"
   },
   {
     "championId": "hakflem-skuttlespike",
     "name": "Hakflem Skuttlespike",
+    "description": "Hakflem Skuttlespike is a mutated, Skaven Gutter Runner, who debuted for the Skavenblight Scramblers. Currently a free agent, Skuttlespike lends his services for Skaven and Underwold Denizens teams.<br><br>A versatile player, Hakflem Skuttlespike began his career with the Skavenblight Scramblers as a blizer and/or gutter runner, depending on the needs of the team. Skuttlespike helped to lead the Scramblers to two Blood Bowl Cup wins: Blood Bowl XXXII in 2492, and Blood Bowl XXXIV in 2494.<br><br>A creation of Clan Rigens, Skuttlespike has been known to be antagonistic to any Skaven player that looks as though they could rival him in violence and popularity.",
     "imageUrl": "http://www.ug-data.xyz/hakflem-skuttlespike/hakflem01.jpeg"
   },
   {
     "championId": "helmutt-wolf",
     "name": "Helmutt Wolf",
+    "description": "Helmut Wulf is a free agent Chainsaw blocker who previously played for the Bruendar Grimjacks and has won the most Delightful Decapitation Awards with two.<br><br>Playing for the Bruendar Grimjacks, Helmut Wulf began his career as a Chainsaw Blocker in 2481 when the coach enlists his help with an experimental weapon.<br><br>Nothing is known of Wulf before Blood Bowl, but fans have enjoyed his mania over wielding his chainsaw through the opposition. During the Half-time Half Hour show with Bob Bifford, Wulf merely answered the first five questions by making revving noises with his mouth until he was allowed to display his skills. The display ended with casualties among the studio audience. Ratings for the show soared as did Wulf's popularity.",
     "imageUrl": "http://www.ug-data.xyz/helmutt-wolf/helmutt01.jpeg"
   },
   {
     "championId": "karla-von-kill",
     "name": "Karla Von Kill",
+    "description": "Karla von Kill, is a free agent and blitzer who previously played for the Hochstadt Hellfires and the Marauders. She was the recipient of the Blood Bowl Players Medal in 2492 for Blood Bowl XXXII, one of the few players to receive this medal while being on the losing team. Currently, Von Kill is a free agent who lends her skills to Amazon, Halfling, Human, Norse, and Old World Alliance teams.<br><br>Karla von Kill started as a blitzer for the Hochstadt Hellfires in 2481. After several seasons and serious injuries during a brutal match in 2487, Von Kill joined the Marauders and competed in Blood Bowl XXXII, losing to the Reikland Reavers. Staying with the Marauders through their merger with the Middeheim Maulers, Karla proved influential in a rematch with the Reavers in Blood Bowl XXXIII, bringing down the Mighty Zug with an elbow jab that made the crowd wince in the final moments of the game, securing the win for the Maulers and securing her place in the Hall of Fame.<br><br>Karla von Kill grew up on a rural pig farm and learned hard work and perseverance from her family. After watching a Blood Bowl game at a local stadium, she signed on with the Hochstadt Hellfires as a team assistant until making her way on the team. In 2486, Von Kill received severe injuries after a clash with a minotaur and was told by apothecaries she would never play again without magical assistance. After training and adhering to a strict diet and fitness regimen, Von Kill was recruited to the Marauders.",
     "imageUrl": "http://www.ug-data.xyz/karla-von-kill/karla01.jpeg"
   },
   {
     "championId": "lord-borak-the-despoiler",
     "name": "Lord Borak the Despoiler",
+    "description": "Lord Borak the Despoiler, also known as The Agony Uncle, and Uncle of Agony, was the Team Captain of The Swords of Chaos and their star Chaos Chosen. Lord Borak has the distinction as the first captain of the first Chaos Chosen team, the first player to become a true celebrity, and the first player to sign a corporate sponsorship deal. Currently, Lord Borak runs a popular advice column for Spike! Magazine, and is the author of many autobiographies and self-help books.<br><br>Lord Borak debuted with The Swords of Chaos in 2409, after being chosen by the Chaos gods to represent their foul motivations in the NAF. By 2420, Lord Borak became a free agent after a mishap with Tzeentch transformed most of the team into mindless spawns. Establishing himself as a violent, yet tactical star player, Lord Borak still lends himself to teams that can afford his price.<br><br>Lord Borak became the first player to become a celebrity, partly through his play on the pitch, but mostly from his psychotic charisma and willingness to have an opinion on anything. In 2431, Lord Borak became the first player to get a company sponsorship and would make many guest appearances advertising for various businesses. Also in 2431, Lord Borak published his first of eventual eleven autobiographies.<br><br>Because Lord Borak had a plethora of corporate sponsorships, he would wear the logos all over his uniform, thus causing confusion as to what team he played for. In 2465, rules were established by the NAF on all players wearing the original team kit of whatever team they played for.<br><br>Spike! Magazine signed Lord Borak to write a column in their weekly edition, causing Lord Borak's popularity to surge even higher. He would then become the advice columnist for Spike! Magazine later that year. In 2477, Lord Borak published his first self-help book, Lose Weight or Die Trying.<br><br>As of 2493, Lord Borak has published eleven autobiographies and twenty-one self-help books.",
     "imageUrl": "http://www.ug-data.xyz/lord-borak-the-despoiler/lordborak01.jpg"
   },
   {
     "championId": "mighty-zug",
     "name": "Mighty Zug",
+    "description": "Zug is a lineman/blitzer for the Reikland Reavers and has won three Blood Bowl championships with the team. His style of bashing and causing pain has given his popularity a boost amongst all sorts of fans. Zug has received multiple awards for his bruising and bashing and remains a solid fixture for the Reavers. Zug is a free gaent and lends his services to Human and Old World Alliance teams.<br><br>In 2468, Zug was introduced to the Reikland Reavers through the practice of adopting a young orphan and giving them an apprenticeship. The practice by an ancient charter states the Reavers are beholden to adopt a young orphan from any Altdorf orphanage and award them an apprenticeship with the team.<br><br>Despite having to deal with a massively large, yet simpering wimp, Coach Helmut Zwimmer personally took interest in Zug's training, even after most of the staff considered the mountainous boy an ugly, stupid, and unfit ape. Through various training regimens and personal attention, Zug emerged from his worthless shell and began to transform into a young man who could use his massive bulk with skillful coordination.<br><br>Zug played in his first professional game with the Reavers in autumn of 2476, and promptly injured eight Middenheim Marauders players in the first half. His popularity rose along with his fatality count, and he helped the Reavers to win Blood Bowl XIX in 2479.<br><br>Zug grew up in the orphanages of Altdorf and was chosen by the Reavers as an apprentice because of his size, even though he was known to be gentle, introverted, and possibly stupid. Playing for the Reavers changed his life and he now is known to have one of the largest collections of Orc teeth in the Old World.",
     "imageUrl": "http://www.ug-data.xyz/mighty-zug/mightyzug02.jpeg"
   },
   {
     "championId": "morg-n-thorg",
     "name": "Morg 'n' Thorg",
+    "description": "Morg 'N Thorg, also known as Morg'th N'Hthrog, or \"The Ballista\", was an Ogre and Team Captain on the Chaos All-Stars. He has led the All-Stars to two Chaos Cup wins and was named NFC Player of the year in 2485. Morg 'N Thorg also is the only player to be elected to the Hall of Fame without retiring. Currently, Morg is a freebooter and offers his services to all teams except Khemri, Necromantic, and Undead teams.<br><br>Club historians do not exactly know how Morg 'N Thorg came to be on the team. A persistent legend is that he simply walked into a practice session and signed himself up in 2469. Thanks to his massive bulk and bashy play-style, Morg became captain of the Chaos All-Stars in 2475. Thanks to this, Morg 'N Thorg has became extremely popular with fans across the world.<br><br>In 2486, Ramtut III, star Mummy for the Champions of Death, admitted to a scheme to specifically kill Morg 'N Thorg during a game against the Chaos All-Stars. This led to Morg to eschew any contract playing for any Undead, Necromantic, or Khemri team.<br><br>Following the collapse of the NAF, Morg decided to become a Freebooter, and the most expensive one to date.<br><br>Although on the field, Morg 'N Thorg is considered a terror, off the field, he is a different Ogre, likened to that of a gentle giant and a hit with children. He starred in an award winning series about road safety adverts that have cut roadside accidents by more than 25%. He also has the distinction of selling more soft toilet paper than anyone else in history.",
     "imageUrl": "http://www.ug-data.xyz/morg-n-thorg/morg01.png"
   },
   {
     "championId": "roxanna-darknail",
     "name": "Roxanna Darknail",
+    "description": "Roxanna Darknail is a Witch Elf who plays for the Darkside Cowboys, although she does have free agent status to be able to play for other teams as needed. She is also sponsored by Gorenier Beauty Products as well as the spokeswoman for the company.<br><br>Darknail began her career with the Darkside Cowboys in 2476, after slaughtering several recruits during tryouts. In one of her more infamous showdowns, Darknail dispatched Dolfar Longstride, famed High Elf kicker, during the finals of the 2490 Elven Kingdoms League season, which resulted in a Cowboys victory. Captured on Cabalvision, the on-pitch murder became one of the opening sequence clips on ABC's World Wide Sports Wide World highlights show, making it one of the most viewed on-pitch murders ever.<br><br>Before joining the Cowboys, Roxanna Darknail was a high priestess of the Cult of Khaine in Har Ganeth for undetermined length of time, second only to High Priestess Hellebron. For reasons known only to Darknail, the Witch Elf left the Sisterhood of Khaine to pursue blood and gore on Nuffle's sacred grounds.<br><br>In 2480, Darknail entered into sponsorship deals with Gorenier Beauty Products after being awarded the inaugural \"Flawless Skin Commendation\" by Gorenier themselves. Many claim that her flawless features are due to her dark pact with Khaine and the blood of her victims. Darknail quickly agreed to these accusations and the rumor has been put to rest.<br><br>Controversy remains for Darknail in the form of her past priesthood serving Khaine. Many Khaine acolytes accused Darknail of allowing Nuffle to usurp her desires as she gains popularity, though Darknail herself has not made comment on the allegations. A known rival, Mordrix Hex of the Kelethrai Executioners, has allegedly made some of these allegations publicly, resulting in a feud that may last for a long time.",
     "imageUrl": "http://www.ug-data.xyz/roxanna-darknail/roxanna01.jpeg"
   },
   {
     "championId": "rumbelow-sheepskin",
     "name": "Rumbelow Sheepskin",
+    "description": "Rumbelow Sheepskin is a Halfling Ram Rider, and plays for the Tithebarn Toffee Apples. He also loans himself out as a free agent to other Halfling teams.<br><br>Rumbelow Sheepskin rides his ram, Longshanks, into any game he plays. He debuted with the Tithebarn Toffee Apples, after renting some of his land to the team for practice and play. When the Toffee Apples began to lose, he rode in and smacked many of the opposition around the pitch.<br><br>Sheepskin owns one of the largest sheep farms in the Moot, and rests a portion of this land to the Tithebarn Toffee Apples.",
     "imageUrl": "http://www.ug-data.xyz/rumbelow-sheepskin/rumbelow02.jpeg"
   },
   {
     "championId": "skrull-halfheight",
     "name": "Skrull Halfheight",
+    "description": "Skrull Halfheight is a skeleton Dwarf who originally played with the Karak Wanderers. He also has played in an undetermined number of seasons with the Champions of Death. Halfheight loans his services to other Undead and Tomb Kings teams.<br><br>Skrull Halfheight began his career with the Karak Wanderers in 2463, as a thrower with a prodigious passing ability. After a particularly fatal tackle, Halfheight was resurrected by Tomolandry in order to play for the Champions of Death, and is allowed to be loaned to other teams as a free agent.<br><br>Almost nothing is known of Halfheight previous to his start with the Karak Wanderers. What is known is that he was/is a very good passer, especially for a Dwarf.<br><br>Many fans think Halfheight's resurrection led to many teams adding non-resurrection clauses in their players' contracts. However, this was done in 2451, after Tomolandry resurrected a lineman of the Dwarf Giants, who went by the exact same name, Skrull Halfheight. Clearly, this Halfheight had no such clause.",
     "imageUrl": "http://www.ug-data.xyz/skrull-halfheight/skrull01.jpeg"
   },
   {
     "championId": "lucien-and-valen-swift",
     "name": "Lucien & Valen Swift",
+    "description": "Lucien Swift, also known as \"The Silver Bullet\" and \"The Moving Target\", was the Team Captain of the Galadrieth Gladiators and their star blitzer. In 2493, Swift, along with his brother, Valen Swift, has become a free agent and lends his services to various Elven teams.<br><br>Playing for the Galadrieth Gladiators, Lucien Swift was part of the championship team in Blood Bowl X in 2470, and has been Team Captain for multiple years. After many seasons, Swift left the Gladiators on a hiatus in 2491, to follow other pursuits in media, and setting himself up along with his brother, Valen, as a pair of free agents, and only offering their services as a pair so that they never have to play against each other on the pitch.<br><br>When the Elfheim Eagles named Valen Swift as their new captain, a rivalry was born with Lucien, who was captain of the Galadrieth Gladiators. The rivalry became very bitter until a grudge match between the teams in 2487 led to a serious injury to Valen. Both Swift brothers repaired their relationship while Valen recuperated.<br><br>In 2491, both brothers set up the Swift Foundation, an organization to help young people start a career in Blood Bowl. They also participated in A Swift Trip Up North, a Cabalvision Special following their travels to the northlands.",
     "imageUrl": "http://www.ug-data.xyz/lucien-and-valen-swift/lucien01.jpeg"
   },
   {
     "championId": "varag-ghoul-shewer",
     "name": "Varag Ghoul-Chewer",
+    "description": "Varag Ghoul-Chewer is the Team Captain of the Black Orc Thunder Valley Greenskins. He is known for helping lead his team to the XL Blood Bowl final on their first attempt!.<br><br>Once a slave of the Gouged Eye, Varag Ghoul-Chewer started his career with the team in 2472 after Coach Gort Sever-Limb witnessed the orc put one of his captors on the critical list. Ghoul-Chewer trained with the team and, in 2474, survived the massacre the team incurred by the hands of \"Axeface\" Manglsson of the Vynheim Valkyries during Blood Bowl XIV.<br><br>The following year, 2475, Coach Sever-Limb made Varag Ghoul-Chewer the Team Captain and had been drilling the Gouged Eye for greater competitions, winning the Chaos Cup two years later in 2477.<br><br>For over 20 years, Varag captained the Gouged Eye fearlessly, leading them to the final of the 2478 Blood Bowl, back-to-back Chaos Cup victories in 2482 and 2483, and the prestigious Blood Bowl title in 2495. However all good things must come to an end, and in the year 2499 Varag caused great controversy when, following an unprecedented argument with head coach Sever-limb, Varag left the Gouged Eye to join the on-the-rise Black Orc Team, the Thunder Valley Greenskins. Whilst Many said that Varag alone couldn't help the Greenskins' fortunes, he proved the pundits wrong; leading the team in numerous violent displays as they made history to reach the XL Blood Bowl on their first attempt!<br><br>Varag Ghoul-Chewer was a foreman at the Wolfleg lead mines in eastern Drakwald. In 2471, after a raid by slavers from the Gouged Eye tribe, Varag Ghoul-Chewer and other orcs were taken to perform manual labor until he was spotted by Coach Gort Sever-Limb and recruited to the team.",
     "imageUrl": "http://www.ug-data.xyz/varag-ghoul-shewer/varag01.jpeg"
   },
   {
     "championId": "whilhelm-chaney",
     "name": "Wilhelm Chaney",
+    "description": "",
     "imageUrl": "http://www.ug-data.xyz/whilhelm-chaney/wilhelm01.jpeg"
   },
   {
     "championId": "grombrindal-the-white-dwarf",
     "name": "Grombrindal, the White Dwarf",
+    "description": "Grombrindal’s reputation is almost mythological. Tales abound of his shrewd tactical advice on the field of battle; on the Blood Bowl pitch this translates to a mastery of team strategies and the ability to draw the very best out of the players around him.",
     "imageUrl": "http://www.ug-data.xyz/grombrindal-the-white-dwarf/grombrindal01.jpeg"
   },
   {
     "championId": "willow-rosebark",
     "name": "Willow Rosebark",
+    "description": "Willow Rosebark is a Dryad blocker, initially playing for the Athelorn Avengers. She now plays as a free agent for Halfling, Amazon, and Wood Elf teams. Rosebark is most notable as the first Dryad to ever play in Blood Bowl.<br><br>Rosebark started her career in 2470, playing for the Athelorn Avengers. She has played for various Amazon, Halfling, and Wood Elf teams since, including the Greenfield Grasshuggers and the Underbrush Underdogs.<br><br>Rosebark has the ability to multiply her mass with thorny vines bursting from her figure, allowing her to match the brute strength of larger, stronger players.<br><br>Not much is known of Rosebark's history, but she has been implicated in a multiple cases of vandalism or vendettas against players and teams who coincidentally destroyed or disgraced sacred groves or wooded areas.",
     "imageUrl": "http://www.ug-data.xyz/willow-rosebark/willow01.jpeg"
   },
   {
     "championId": "zolcath-le-zoat",
     "name": "Zolcath le Zoat",
+    "description": "Zolcath is a Zoat blocker, initially playing for the Laurelorn Paladins. He now plays as a free agent for Amazon, Lizardmen, and Wood Elf teams. Zolcath is most notable as the first Zoat to ever play in Blood Bowl.<br><br>Zolcath started his career in 2466, playing for the Laurelorn Paladins. There was a large gap between Zolcath's performances on the pitch, but came back with the Laurelorn Paladins to help them win the Springleaf Cup in 2492.<br><br>Not much is known of Zolcath's personal life, or any life a Zoat for that matter. Zoats have been known to be sought out by Elves to learn magics and secrets of lifewinds and other ancient philosophies. Zolcath is immensely private and only offers services to those teams that can find him in his realm.",
     "imageUrl": "http://www.ug-data.xyz/zolcath-le-zoat/zolcath01.jpeg"
   }
 ]

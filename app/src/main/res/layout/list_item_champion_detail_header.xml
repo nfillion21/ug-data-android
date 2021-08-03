@@ -15,19 +15,53 @@
         android:text="@{champion.name}"
         android:textAppearance="?attr/textAppearanceHeadline3" />
         -->
-
-    <TextView
-        android:id="@+id/header_text"
-        style="?android:attr/textAppearanceMedium"
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_small"
-        android:layout_marginTop="@dimen/margin_small"
-        android:layout_marginEnd="@dimen/margin_small"
-        android:textIsSelectable="true"
-        app:renderHtml="@{champion.name}"
-        tools:text="Details about the champion" />
+        android:layout_margin="@dimen/margin_normal">
 
+        <TextView
+            android:id="@+id/champion_detail_header_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:text="@string/champion_detail_description"
+            android:textStyle="bold"
+            android:textAppearance="?attr/textAppearanceSubtitle2"
+            android:textColor="?attr/colorAccent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/champion_detail_header_description_content"
+            style="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:textIsSelectable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/champion_detail_header_description"
+            app:renderHtml="@{champion.description}"
+            tools:text="Details about the champion" />
+
+        <TextView
+            android:id="@+id/champion_detail_header_skills"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_double"
+            android:text="@string/champion_detail_skills"
+            android:textStyle="bold"
+            android:textAppearance="?attr/textAppearanceSubtitle2"
+            android:textColor="?attr/colorAccent"
+            app:layout_constraintTop_toBottomOf="@+id/champion_detail_header_description_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
     <!--
     app:renderHtml="@{viewModel.plant.description}"
         app:layout_constraintEnd_toEndOf="parent"
