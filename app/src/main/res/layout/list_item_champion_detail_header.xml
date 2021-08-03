@@ -6,6 +6,7 @@
             name="champion"
             type="pgm.poolp.ugdata.data.Champion"/>
     </data>
+    <!--
     <TextView
         android:id="@+id/header_text"
         android:layout_width="wrap_content"
@@ -13,5 +14,25 @@
         android:layout_gravity="center"
         android:text="@{champion.name}"
         android:textAppearance="?attr/textAppearanceHeadline3" />
+        -->
 
+    <TextView
+        android:id="@+id/header_text"
+        style="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:textIsSelectable="true"
+        app:renderHtml="@{champion.name}"
+        tools:text="Details about the champion" />
+
+    <!--
+    app:renderHtml="@{viewModel.plant.description}"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:minHeight="@dimen/champion_description_min_height"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+    -->
 </layout>
