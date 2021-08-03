@@ -26,6 +26,8 @@ buildscript {
 
         glideVersion = '4.10.0'
 
+        recyclerViewVersion = '1.2.0-alpha06'
+
         // testing
         junitVersion = '4.13.2'
         espressoVersion = '3.1.0'

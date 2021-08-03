@@ -9,10 +9,12 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.findNavController
+import androidx.recyclerview.widget.ConcatAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import dagger.hilt.android.AndroidEntryPoint
 import pgm.poolp.ugdata.R
+import pgm.poolp.ugdata.adapters.ChampionDetailHeaderAdapter
 import pgm.poolp.ugdata.adapters.ChampionDetailListAdapter
 import pgm.poolp.ugdata.adapters.SkillListAdapter
 import pgm.poolp.ugdata.data.Champion
@@ -50,9 +52,11 @@ class ChampionDetailFragment : Fragment() {
                 }
             }
 
+            val headerAdapter = ChampionDetailHeaderAdapter()
             val adapter = ChampionDetailListAdapter()
-            championDetailList.adapter = adapter
+            championDetailList.adapter = ConcatAdapter(headerAdapter, adapter)
             championDetailViewModel.championWithSkills.observe(viewLifecycleOwner) { championWithSkills ->
+                headerAdapter.submitList(listOf(championWithSkills.champion))
                 adapter.submitList(championWithSkills.skills)
             }
 

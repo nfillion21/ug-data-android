@@ -28,7 +28,6 @@ class SkillListFragment : Fragment() {
         binding.skillsList.adapter = adapter
         subscribeUi(adapter)
 
-        //setHasOptionsMenu(true)
         return binding.root
     }
 
@@ -37,30 +36,4 @@ class SkillListFragment : Fragment() {
             adapter.submitList(skills)
         }
     }
-
-    /*
-    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        inflater.inflate(R.menu.menu_plant_list, menu)
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return when (item.itemId) {
-            R.id.filter_zone -> {
-                updateData()
-                true
-            }
-            else -> super.onOptionsItemSelected(item)
-        }
-    }
-
-    private fun updateData() {
-        with(viewModel) {
-            if (isFiltered()) {
-                clearGrowZoneNumber()
-            } else {
-                setGrowZoneNumber(9)
-            }
-        }
-    }
-    */
 }
