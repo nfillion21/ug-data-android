@@ -1,13 +1,16 @@
 package pgm.poolp.ugdata.adapters
 
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import pgm.poolp.ugdata.data.Champion
 import pgm.poolp.ugdata.data.Skill
 import pgm.poolp.ugdata.databinding.ListItemSkillBinding
+import pgm.poolp.ugdata.ui.HomeViewPagerFragmentDirections
 
 class SkillListAdapter : ListAdapter<Skill, RecyclerView.ViewHolder>(SkillDiffCallback()) {
 
@@ -30,24 +33,22 @@ class SkillListAdapter : ListAdapter<Skill, RecyclerView.ViewHolder>(SkillDiffCa
     ) : RecyclerView.ViewHolder(binding.root) {
         init {
             binding.setClickListener {
-                binding.skill?.let { _ ->
-                    //navigateToPlant(plant, it)
+                binding.skill?.let { skill ->
+                    navigateToSkill(skill, it)
                 }
             }
         }
 
-        /*
-        private fun navigateToPlant(
-            champion: Champion,
+        private fun navigateToSkill(
+            skill: Skill,
             view: View
         ) {
             val direction =
-                HomeViewPagerFragmentDirections.actionViewPagerFragmentToPlantDetailFragment(
-                    plant.plantId
+                HomeViewPagerFragmentDirections.actionViewPagerFragmentToSkillDetailFragment(
+                    skill.skillId
                 )
             view.findNavController().navigate(direction)
         }
-        */
 
         fun bind(item: Skill) {
             binding.apply {

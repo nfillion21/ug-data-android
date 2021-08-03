@@ -16,6 +16,15 @@
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_view_pager_fragment_to_skill_detail_fragment"
+            app:destination="@id/skill_detail_fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
     </fragment>
 
     <fragment
@@ -35,6 +44,26 @@
         -->
         <argument
             android:name="championId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/skill_detail_fragment"
+        android:name="pgm.poolp.ugdata.ui.SkillDetailFragment"
+        android:label="@string/champion_details_title"
+        tools:layout="@layout/fragment_champion_detail">
+
+        <!--
+        <action
+            android:id="@+id/action_champion_detail_fragment_to_gallery_fragment"
+            app:destination="@id/gallery_fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        -->
+        <argument
+            android:name="skillId"
             app:argType="string" />
     </fragment>
 

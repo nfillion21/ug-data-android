@@ -5,16 +5,14 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import pgm.poolp.ugdata.data.Skill
-import pgm.poolp.ugdata.databinding.ListItemChampionBinding
-import pgm.poolp.ugdata.databinding.ListItemChampionDetailBinding
-import pgm.poolp.ugdata.databinding.ListItemSkillBinding
+import pgm.poolp.ugdata.data.Champion
+import pgm.poolp.ugdata.databinding.ListItemSkillDetailBinding
 
-class ChampionDetailListAdapter : ListAdapter<Skill, RecyclerView.ViewHolder>(SkillDetailDiffCallback2()) {
+class SkillDetailListAdapter : ListAdapter<Champion, RecyclerView.ViewHolder>(ChampionDiffCallback2()) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
-        return ChampionDetailViewHolder(
-            ListItemChampionDetailBinding.inflate(
+        return SkillDetailViewHolder(
+            ListItemSkillDetailBinding.inflate(
                 LayoutInflater.from(parent.context),
                 parent,
                 false
@@ -23,15 +21,15 @@ class ChampionDetailListAdapter : ListAdapter<Skill, RecyclerView.ViewHolder>(Sk
     }
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-        val skill = getItem(position)
-        (holder as ChampionDetailViewHolder).bind(skill)
+        val champion = getItem(position)
+        (holder as SkillDetailViewHolder).bind(champion)
     }
-    class ChampionDetailViewHolder(
-        private val binding: ListItemChampionDetailBinding
+    class SkillDetailViewHolder(
+        private val binding: ListItemSkillDetailBinding
     ) : RecyclerView.ViewHolder(binding.root) {
         init {
             binding.setClickListener {
-                binding.skill?.let { _ ->
+                binding.champion?.let { _ ->
                     //navigateToPlant(plant, it)
                 }
             }
@@ -50,21 +48,21 @@ class ChampionDetailListAdapter : ListAdapter<Skill, RecyclerView.ViewHolder>(Sk
         }
         */
 
-        fun bind(item: Skill) {
+        fun bind(item: Champion) {
             binding.apply {
-                skill = item
+                champion = item
                 executePendingBindings()
             }
         }
     }
 }
-private class SkillDetailDiffCallback2 : DiffUtil.ItemCallback<Skill>() {
+private class ChampionDiffCallback2 : DiffUtil.ItemCallback<Champion>() {
 
-    override fun areItemsTheSame(oldItem: Skill, newItem: Skill): Boolean {
-        return oldItem.skillId == newItem.skillId
+    override fun areItemsTheSame(oldItem: Champion, newItem: Champion): Boolean {
+        return oldItem.championId == newItem.championId
     }
 
-    override fun areContentsTheSame(oldItem: Skill, newItem: Skill): Boolean {
+    override fun areContentsTheSame(oldItem: Champion, newItem: Champion): Boolean {
         return oldItem == newItem
     }
 }
