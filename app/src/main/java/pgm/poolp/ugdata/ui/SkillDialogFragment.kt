@@ -10,7 +10,6 @@ import androidx.fragment.app.viewModels
 import dagger.hilt.android.AndroidEntryPoint
 import pgm.poolp.ugdata.R
 import pgm.poolp.ugdata.databinding.FragmentDialogSkillDetailBinding
-import pgm.poolp.ugdata.databinding.FragmentSkillDetailBinding
 import pgm.poolp.ugdata.viewmodels.SkillDetailViewModel
 
 @AndroidEntryPoint
@@ -31,26 +30,7 @@ class SkillDialogFragment : DialogFragment() {
         ).apply {
             viewModel = skillDetailViewModel
             lifecycleOwner = this@SkillDialogFragment
-
-            //executePendingBindings()
-            /*
-            skillDetailViewModel.skill.observe(this@SkillDialogFragment) { skill ->
-                adapter.submitList(skillWithChampions.champions)
-
-            }
-            */
         }
-
         return binding.root
-
-
-
-
-/*
-        val binding = FragmentSkillDetailBinding.inflate(inflater, container, false)
-        context ?: return binding.root
-        return binding.root
-
-             */
     }
 }
