@@ -1,14 +1,15 @@
 package pgm.poolp.ugdata.adapters
 
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import pgm.poolp.ugdata.data.Skill
-import pgm.poolp.ugdata.databinding.ListItemChampionBinding
 import pgm.poolp.ugdata.databinding.ListItemChampionDetailBinding
-import pgm.poolp.ugdata.databinding.ListItemSkillBinding
+import pgm.poolp.ugdata.ui.ChampionDetailFragmentDirections
 
 class ChampionDetailListAdapter : ListAdapter<Skill, RecyclerView.ViewHolder>(SkillDetailDiffCallback2()) {
 
@@ -31,24 +32,26 @@ class ChampionDetailListAdapter : ListAdapter<Skill, RecyclerView.ViewHolder>(Sk
     ) : RecyclerView.ViewHolder(binding.root) {
         init {
             binding.setClickListener {
-                binding.skill?.let { _ ->
-                    //navigateToPlant(plant, it)
+                binding.skill?.let { skill ->
+                    navigateToDialogSkill(skill, it)
+                    /*
+                    val direction =
+                        ChampionDetailFragmentDirections.actionChampionDetailFragmentToSkillDialogFragment()
+                    it.findNavController().navigate(direction)
+                    */
+
                 }
             }
         }
 
-        /*
-        private fun navigateToPlant(
-            champion: Champion,
+        private fun navigateToDialogSkill(
+            skill: Skill,
             view: View
         ) {
             val direction =
-                HomeViewPagerFragmentDirections.actionViewPagerFragmentToPlantDetailFragment(
-                    plant.plantId
-                )
+                ChampionDetailFragmentDirections.actionChampionDetailFragmentToSkillDialogFragment(skill.skillId)
             view.findNavController().navigate(direction)
         }
-        */
 
         fun bind(item: Skill) {
             binding.apply {

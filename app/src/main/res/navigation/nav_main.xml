@@ -45,12 +45,15 @@
         <argument
             android:name="championId"
             app:argType="string" />
+        <action
+            android:id="@+id/action_champion_detail_fragment_to_skillDialogFragment"
+            app:destination="@id/skillDialogFragment" />
     </fragment>
 
     <fragment
         android:id="@+id/skill_detail_fragment"
         android:name="pgm.poolp.ugdata.ui.SkillDetailFragment"
-        android:label="@string/champion_details_title"
+        android:label="@string/dialog_skill_details_title"
         tools:layout="@layout/fragment_champion_detail">
 
         <!--
@@ -66,7 +69,15 @@
             android:name="skillId"
             app:argType="string" />
     </fragment>
+    <dialog
+        android:id="@+id/skillDialogFragment"
+        android:name="pgm.poolp.ugdata.ui.SkillDialogFragment"
+        android:label="SkillDialogFragment" >
 
+        <argument
+            android:name="skillId"
+            app:argType="string" />
+    </dialog>
     <!--
     <fragment
         android:id="@+id/gallery_fragment"

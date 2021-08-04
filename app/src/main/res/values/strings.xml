@@ -7,6 +7,8 @@
         translation_description="Title for the skill details screen where the user can see the details for a specific skill.">Skill details</string>
     <string name="champion_details_title"
         translation_description="Title for the champion details screen where the user can see the details for a specific champion.">Champion details</string>
+    <string name="dialog_skill_details_title"
+        translation_description="Title for the skill details screen where the user can see the details for a specific skill.">Skill details</string>
     <string name="champions_title"
         translation_description="Title for the 'Champions' screen where the user can see the list of champions available in BB.">Champions</string>
     <string name="skills_title"
@@ -18,5 +20,6 @@
     <string name="gallery_content_description" translation_description="Content description for the clickable image to navigate to the gallery screen">Navigate to gallery screen</string>
 
     <string name="champion_detail_description" >Description</string>
+    <string name="skill_detail_description" >Description</string>
     <string name="champion_detail_skills">Skills</string>
 </resources>

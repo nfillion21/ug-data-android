@@ -38,7 +38,7 @@ class SkillDetailFragment : Fragment() {
 
         val binding = DataBindingUtil.inflate<FragmentSkillDetailBinding>(
             inflater,
-            R.layout.fragment_skill_detail,
+            R.layout.fragment_dialog_skill_detail,
             container,
             false
         ).apply {
