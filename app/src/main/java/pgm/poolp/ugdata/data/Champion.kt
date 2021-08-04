@@ -8,5 +8,6 @@ data class Champion(
     @PrimaryKey (autoGenerate = false) val championId: String,
     val name: String,
     val description: String,
-    val imageUrl: String
+    val imageUrl: String,
+    val characteristicsUrl: String
 )
