@@ -34,12 +34,6 @@ class ChampionDetailListAdapter : ListAdapter<Skill, RecyclerView.ViewHolder>(Sk
             binding.setClickListener {
                 binding.skill?.let { skill ->
                     navigateToDialogSkill(skill, it)
-                    /*
-                    val direction =
-                        ChampionDetailFragmentDirections.actionChampionDetailFragmentToSkillDialogFragment()
-                    it.findNavController().navigate(direction)
-                    */
-
                 }
             }
         }

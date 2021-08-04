@@ -9,5 +9,5 @@ data class Champion(
     val name: String,
     val description: String,
     val imageUrl: String,
-    val characteristicsUrl: String
+    val characteristicsImageUrl: String
 )

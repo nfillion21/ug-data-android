@@ -20,6 +20,7 @@
     <string name="gallery_content_description" translation_description="Content description for the clickable image to navigate to the gallery screen">Navigate to gallery screen</string>
 
     <string name="champion_detail_description" >Description</string>
+    <string name="champion_detail_characteristics" >Caractéristiques</string>
     <string name="skill_detail_description" >Description</string>
     <string name="champion_detail_skills">Skills</string>
 </resources>
