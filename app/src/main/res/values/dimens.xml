@@ -15,6 +15,8 @@
 
     <dimen name="champion_detail_app_bar_height">278dp</dimen>
 
+    <dimen name="button_min_height">48dp</dimen>
+
     <dimen name="margin_double">32dp</dimen>
     <dimen name="margin_normal">16dp</dimen>
     <dimen name="margin_small">8dp</dimen>
