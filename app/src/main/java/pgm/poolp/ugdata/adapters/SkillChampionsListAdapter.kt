@@ -1,18 +1,23 @@
 package pgm.poolp.ugdata.adapters
 
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import pgm.poolp.ugdata.data.Champion
-import pgm.poolp.ugdata.databinding.ListItemSkillDetailBinding
+import pgm.poolp.ugdata.data.Skill
+import pgm.poolp.ugdata.databinding.ListItemChampionDetailBinding
+import pgm.poolp.ugdata.databinding.ListItemSkillChampionsBinding
+import pgm.poolp.ugdata.ui.ChampionDetailFragmentDirections
 
-class SkillDetailListAdapter : ListAdapter<Champion, RecyclerView.ViewHolder>(ChampionDiffCallback2()) {
+class SkillChampionsListAdapter : ListAdapter<Champion, RecyclerView.ViewHolder>(SkillDetailDiffCallback2()) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
-        return SkillDetailViewHolder(
-            ListItemSkillDetailBinding.inflate(
+        return SkillChampionsViewHolder(
+            ListItemSkillChampionsBinding.inflate(
                 LayoutInflater.from(parent.context),
                 parent,
                 false
@@ -22,31 +27,11 @@ class SkillDetailListAdapter : ListAdapter<Champion, RecyclerView.ViewHolder>(Ch
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         val champion = getItem(position)
-        (holder as SkillDetailViewHolder).bind(champion)
+        (holder as SkillChampionsViewHolder).bind(champion)
     }
-    class SkillDetailViewHolder(
-        private val binding: ListItemSkillDetailBinding
+    class SkillChampionsViewHolder(
+        private val binding: ListItemSkillChampionsBinding
     ) : RecyclerView.ViewHolder(binding.root) {
-        init {
-            binding.setClickListener {
-                binding.champion?.let { _ ->
-                    //navigateToPlant(plant, it)
-                }
-            }
-        }
-
-        /*
-        private fun navigateToPlant(
-            champion: Champion,
-            view: View
-        ) {
-            val direction =
-                HomeViewPagerFragmentDirections.actionViewPagerFragmentToPlantDetailFragment(
-                    plant.plantId
-                )
-            view.findNavController().navigate(direction)
-        }
-        */
 
         fun bind(item: Champion) {
             binding.apply {
@@ -56,7 +41,7 @@ class SkillDetailListAdapter : ListAdapter<Champion, RecyclerView.ViewHolder>(Ch
         }
     }
 }
-private class ChampionDiffCallback2 : DiffUtil.ItemCallback<Champion>() {
+private class SkillDetailDiffCallback2 : DiffUtil.ItemCallback<Champion>() {
 
     override fun areItemsTheSame(oldItem: Champion, newItem: Champion): Boolean {
         return oldItem.championId == newItem.championId

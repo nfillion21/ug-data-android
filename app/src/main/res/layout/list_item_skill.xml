@@ -42,7 +42,7 @@
             <TextView
                 android:id="@+id/skill_item_title"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="@dimen/button_min_height"
                 android:gravity="center_vertical"
                 android:padding="@dimen/margin_small"
                 android:text="@{skill.name}"

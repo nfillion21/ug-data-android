@@ -60,97 +60,12 @@ class ChampionDetailFragment : Fragment() {
                 adapter.submitList(championWithSkills.skills)
             }
 
-            //galleryNav.setOnClickListener { navigateToGallery() }
-
-            //var isToolbarShown = false
-
-            // scroll change listener begins at Y = 0 when image is fully collapsed
-            /*
-            championDetailList.setOnScrollChangeListener(
-                NestedScrollView.OnScrollChangeListener { _, _, scrollY, _, _ ->
-
-                    // User scrolled past image to height of toolbar and the title text is
-                    // underneath the toolbar, so the toolbar should be shown.
-                    val shouldShowToolbar = scrollY > toolbar.height
-
-                    // The new state of the toolbar differs from the previous state; update
-                    // appbar and toolbar attributes.
-                    if (isToolbarShown != shouldShowToolbar) {
-                        isToolbarShown = shouldShowToolbar
-
-                        // Use shadow animator to add elevation if toolbar is shown
-                        appbar.isActivated = shouldShowToolbar
-
-                        // Show the plant name if toolbar is shown
-                        toolbarLayout.isTitleEnabled = shouldShowToolbar
-                    }
-                }
-            )
-            */
-
-            /*
-            championDetailList.addOnScrollListener(object : RecyclerView.OnScrollListener()
-            {
-                override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int)
-                {
-                    super.onScrolled(recyclerView, dx, dy)
-
-                    // User scrolled past image to height of toolbar and the title text is
-                    // underneath the toolbar, so the toolbar should be shown.
-                    val shouldShowToolbar = dy > toolbar.height
-
-                    // The new state of the toolbar differs from the previous state; update
-                    // appbar and toolbar attributes.
-                    if (isToolbarShown != shouldShowToolbar) {
-                        isToolbarShown = shouldShowToolbar
-
-                        // Use shadow animator to add elevation if toolbar is shown
-                        appbar.isActivated = shouldShowToolbar
-
-                        // Show the plant name if toolbar is shown
-                        toolbarLayout.isTitleEnabled = !shouldShowToolbar
-                    }
-                }
-            })
-            */
-
             toolbar.setNavigationOnClickListener { view ->
                 view.findNavController().navigateUp()
             }
         }
         setHasOptionsMenu(true)
-
-        /*
-        championDetailViewModel.championWithSkills.observe(viewLifecycleOwner) { result ->
-
-            val skills = championDetailViewModel.championWithSkills
-            val skills2 = championDetailViewModel.championWithSkills
-        }
-        */
-
         return binding.root
-    }
-
-
-    private fun navigateToGallery() {
-        /*
-        championDetailViewModel.champion.value?.let { champion ->
-            val direction =
-                ChampionDetailFragmentDirections.actionChampionDetailFragmentToGalleryFragment(cham.name)
-            findNavController().navigate(direction)
-        }
-        */
-    }
-
-    // FloatingActionButtons anchored to AppBarLayouts have their visibility controlled by the scroll position.
-    // We want to turn this behavior off to hide the FAB when it is clicked.
-    //
-    // This is adapted from Chris Banes' Stack Overflow answer: https://stackoverflow.com/a/41442923
-    private fun hideAppBarFab(fab: FloatingActionButton) {
-        val params = fab.layoutParams as CoordinatorLayout.LayoutParams
-        val behavior = params.behavior as FloatingActionButton.Behavior
-        behavior.isAutoHideEnabled = false
-        fab.hide()
     }
 
     fun interface Callback {

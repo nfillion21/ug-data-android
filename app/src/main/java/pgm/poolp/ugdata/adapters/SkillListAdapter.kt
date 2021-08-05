@@ -7,7 +7,6 @@ import androidx.navigation.findNavController
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import pgm.poolp.ugdata.data.Champion
 import pgm.poolp.ugdata.data.Skill
 import pgm.poolp.ugdata.databinding.ListItemSkillBinding
 import pgm.poolp.ugdata.ui.HomeViewPagerFragmentDirections
@@ -44,9 +43,7 @@ class SkillListAdapter : ListAdapter<Skill, RecyclerView.ViewHolder>(SkillDiffCa
             view: View
         ) {
             val direction =
-                HomeViewPagerFragmentDirections.actionViewPagerFragmentToSkillDetailFragment(
-                    skill.skillId
-                )
+                HomeViewPagerFragmentDirections.actionViewPagerFragmentToSkillDetailDialogFragment(skill.skillId)
             view.findNavController().navigate(direction)
         }
 

@@ -11,7 +11,7 @@ import pgm.poolp.ugdata.data.Skill
 import pgm.poolp.ugdata.databinding.ListItemChampionDetailBinding
 import pgm.poolp.ugdata.ui.ChampionDetailFragmentDirections
 
-class ChampionDetailListAdapter : ListAdapter<Skill, RecyclerView.ViewHolder>(SkillDetailDiffCallback2()) {
+class ChampionDetailListAdapter : ListAdapter<Skill, RecyclerView.ViewHolder>(SkillDetailDiffCallback21()) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         return ChampionDetailViewHolder(
@@ -55,7 +55,7 @@ class ChampionDetailListAdapter : ListAdapter<Skill, RecyclerView.ViewHolder>(Sk
         }
     }
 }
-private class SkillDetailDiffCallback2 : DiffUtil.ItemCallback<Skill>() {
+private class SkillDetailDiffCallback21 : DiffUtil.ItemCallback<Skill>() {
 
     override fun areItemsTheSame(oldItem: Skill, newItem: Skill): Boolean {
         return oldItem.skillId == newItem.skillId

@@ -8,20 +8,20 @@ interface ChampionDao {
 
     // The flow always holds/caches latest version of data. Notifies its observers when the
     // data has changed.
-    @Query("SELECT * FROM champion ORDER BY name")
+    @Query("select * from champion order by name")
     fun getChampions(): Flow<List<Champion>>
 
     @Transaction
-    @Query("SELECT * FROM champion ORDER BY name")
+    @Query("select * from champion order by name")
     fun getChampionsWithSkills(): Flow<List<ChampionWithSkills>>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insert(champion: Champion)
 
-    @Query("DELETE FROM champion")
+    @Query("delete from champion")
     suspend fun deleteAll()
 
-    @Query("SELECT * FROM champion WHERE championId = :championId")
+    @Query("select * from champion where championId = :championId")
     fun getChampion(championId: String): Flow<Champion>
 
     @Transaction

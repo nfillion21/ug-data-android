@@ -16,7 +16,7 @@ class SkillDetailViewModel @Inject constructor(
 
     val skillId: String = savedStateHandle.get<String>(SKILL_ID_SAVED_STATE_KEY)!!
     val skill = skillRepository.getSkill(skillId).asLiveData()
-    val championWithSkills = skillRepository.getSkillWithChampions(skillId).asLiveData()
+    val skillWithChampions = skillRepository.getSkillWithChampions(skillId).asLiveData()
 
     companion object {
         private const val SKILL_ID_SAVED_STATE_KEY = "skillId"

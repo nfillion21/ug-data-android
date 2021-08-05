@@ -1,0 +1,59 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <import type="pgm.poolp.ugdata.data.Skill"/>
+        <variable
+            name="viewModel"
+            type="pgm.poolp.ugdata.viewmodels.SkillDetailViewModel" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/margin_normal">
+
+        <!--
+        <TextView
+            android:id="@+id/fragment_skill_detail_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:text="@{viewModel.skill.name}"
+            android:textStyle="bold"
+            android:textAppearance="?attr/textAppearanceSubtitle2"
+            android:textColor="?attr/colorAccent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/fragment_skill_detail_description_content"
+            style="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:textIsSelectable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fragment_skill_detail_description"
+            android:text="@{viewModel.skill.description}"
+            tools:text="Details about the champion" />
+        -->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/skill_champions_detail_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingEnd="@dimen/card_side_margin"
+            android:paddingStart="@dimen/card_side_margin"
+            android:paddingTop="@dimen/header_margin"
+            app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+            app:spanCount="@integer/grid_skill_columns"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:context="pgm.poolp.ugdata.MainActivity"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

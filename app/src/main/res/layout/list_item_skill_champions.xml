@@ -4,9 +4,6 @@
 
     <data>
         <variable
-            name="clickListener"
-            type="android.view.View.OnClickListener"/>
-        <variable
             name="champion"
             type="pgm.poolp.ugdata.data.Champion"/>
     </data>
@@ -17,7 +14,6 @@
         android:layout_marginStart="@dimen/card_side_margin"
         android:layout_marginEnd="@dimen/card_side_margin"
         android:layout_marginBottom="@dimen/margin_normal"
-        android:onClick="@{clickListener}"
         app:cardElevation="@dimen/card_elevation"
         app:cardPreventCornerOverlap="false"
         app:shapeAppearanceOverlay="@style/ShapeAppearance.UGData.Card">
@@ -26,29 +22,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <!--
-            <ImageView
-                android:id="@+id/champion_item_image"
-                android:layout_width="0dp"
-                android:layout_height="@dimen/champion_item_image_height"
-                android:contentDescription="@string/a11y_champion_item_image"
-                android:scaleType="centerCrop"
-                app:imageFromUrl="@{champion.imageUrl}"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-            -->
-
             <TextView
-                android:id="@+id/skill_item_title"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:id="@+id/skill_champions_item_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_min_height"
                 android:gravity="center_vertical"
+                android:background="?attr/colorPrimary"
                 android:padding="@dimen/margin_small"
                 android:text="@{champion.name}"
                 android:textAppearance="?attr/textAppearanceListItemSecondary"
-                android:textColor="?attr/colorAccent"
                 android:textStyle="bold"
+                android:textColor="?attr/colorOnPrimary"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

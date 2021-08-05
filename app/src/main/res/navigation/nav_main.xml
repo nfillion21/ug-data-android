@@ -16,14 +16,9 @@
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
-
         <action
-            android:id="@+id/action_view_pager_fragment_to_skill_detail_fragment"
-            app:destination="@id/skill_detail_fragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right" />
+            android:id="@+id/action_view_pager_fragment_to_skillDetailDialogFragment"
+            app:destination="@id/skillDetailDialogFragment" />
 
     </fragment>
 
@@ -32,16 +27,6 @@
         android:name="pgm.poolp.ugdata.ui.ChampionDetailFragment"
         android:label="@string/champion_details_title"
         tools:layout="@layout/fragment_champion_detail">
-
-        <!--
-        <action
-            android:id="@+id/action_champion_detail_fragment_to_gallery_fragment"
-            app:destination="@id/gallery_fragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right" />
-        -->
         <argument
             android:name="championId"
             app:argType="string" />
@@ -50,44 +35,23 @@
             app:destination="@id/skillDialogFragment" />
     </fragment>
 
-    <fragment
-        android:id="@+id/skill_detail_fragment"
-        android:name="pgm.poolp.ugdata.ui.SkillDetailFragment"
-        android:label="@string/dialog_skill_details_title"
-        tools:layout="@layout/fragment_champion_detail">
-
-        <!--
-        <action
-            android:id="@+id/action_champion_detail_fragment_to_gallery_fragment"
-            app:destination="@id/gallery_fragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right" />
-        -->
-        <argument
-            android:name="skillId"
-            app:argType="string" />
-    </fragment>
     <dialog
         android:id="@+id/skillDialogFragment"
         android:name="pgm.poolp.ugdata.ui.SkillDialogFragment"
-        android:label="SkillDialogFragment" >
-
+        android:label="SkillDialogFragment"
+        tools:layout="@layout/fragment_dialog_skill_detail">
         <argument
             android:name="skillId"
             app:argType="string" />
     </dialog>
-    <!--
-    <fragment
-        android:id="@+id/gallery_fragment"
-        android:name="pgm.poolp.ugdata.ui.ChampionGalleryFragment"
-        android:label="@string/champion_details_title"
-        tools:layout="@layout/fragment_gallery">
-        <argument
-            android:name="championName"
-            app:argType="string" />
-    </fragment>
-    -->
+    <dialog
+        android:id="@+id/skillDetailDialogFragment"
+        android:name="pgm.poolp.ugdata.ui.SkillDetailDialogFragment"
+        android:label="SkillDetailDialogFragment"
+        tools:layout="@layout/fragment_dialog_skill_champions_detail">
+    <argument
+        android:name="skillId"
+        app:argType="string" />
+    </dialog>
 
 </navigation>
