@@ -11,9 +11,7 @@
     <pgm.poolp.ugdata.views.MaskedCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/card_side_margin"
-        android:layout_marginEnd="@dimen/card_side_margin"
-        android:layout_marginBottom="@dimen/margin_normal"
+        android:layout_marginTop="@dimen/card_bottom_margin"
         app:cardElevation="@dimen/card_elevation"
         app:cardPreventCornerOverlap="false"
         app:shapeAppearanceOverlay="@style/ShapeAppearance.UGData.Card">
@@ -22,22 +20,31 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <TextView
-                android:id="@+id/skill_champions_item_title"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/button_min_height"
-                android:gravity="center_vertical"
-                android:background="?attr/colorPrimary"
-                android:padding="@dimen/margin_small"
-                android:text="@{champion.name}"
-                android:textAppearance="?attr/textAppearanceListItemSecondary"
-                android:textStyle="bold"
-                android:textColor="?attr/colorOnPrimary"
-                app:layout_constraintBottom_toBottomOf="parent"
+            <ImageView
+                android:id="@+id/champion_item_image"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/champion_item_image_height"
+                android:contentDescription="@string/a11y_champion_item_image"
+                android:scaleType="centerCrop"
+                app:imageFromUrl="@{champion.imageUrl}"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:text="Tomato" />
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/champion_item_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_normal"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:text="@{champion.name}"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:gravity="center_horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/champion_item_image"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:text="Tomato"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

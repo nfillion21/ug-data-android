@@ -8,8 +8,7 @@
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin_normal">
+        android:layout_height="wrap_content">
 
         <TextView
             android:id="@+id/skill_champions_detail_header_description"
@@ -17,7 +16,6 @@
             android:layout_height="wrap_content"
             android:text="@{skill.name}"
             android:textStyle="bold"
-            android:layout_marginTop="@dimen/margin_normal"
             android:textAppearance="?attr/textAppearanceSubtitle2"
             android:textColor="?attr/colorAccent"
             app:layout_constraintTop_toTopOf="parent"
@@ -29,9 +27,6 @@
             style="?android:attr/textAppearanceListItem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/margin_small"
-            android:layout_marginTop="@dimen/margin_normal"
-            android:layout_marginEnd="@dimen/margin_small"
             android:textIsSelectable="true"
             android:textColor="?attr/colorOnSurface"
             app:layout_constraintEnd_toEndOf="parent"

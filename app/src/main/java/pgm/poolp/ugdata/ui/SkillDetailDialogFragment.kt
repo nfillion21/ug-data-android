@@ -1,11 +1,9 @@
 package pgm.poolp.ugdata.ui
 
-import android.app.Dialog
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.Window
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.viewModels
@@ -31,7 +29,7 @@ class SkillDetailDialogFragment : DialogFragment() {
             inflater,
             R.layout.fragment_dialog_skill_champions_detail,
             container,
-            true
+            false
         ).apply {
             viewModel = skillDetailViewModel
             lifecycleOwner = this@SkillDetailDialogFragment
