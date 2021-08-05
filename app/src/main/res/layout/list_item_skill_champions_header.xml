@@ -15,9 +15,9 @@
             android:id="@+id/skill_champions_detail_header_description"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@string/champion_detail_description"
+            android:text="@{skill.name}"
             android:textStyle="bold"
-            android:layout_marginTop="@dimen/margin_double"
+            android:layout_marginTop="@dimen/margin_normal"
             android:textAppearance="?attr/textAppearanceSubtitle2"
             android:textColor="?attr/colorAccent"
             app:layout_constraintTop_toTopOf="parent"
@@ -26,13 +26,14 @@
 
         <TextView
             android:id="@+id/skill_champions_detail_header_description_content"
-            style="?android:attr/textAppearanceMedium"
+            style="?android:attr/textAppearanceListItem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_small"
             android:layout_marginTop="@dimen/margin_normal"
             android:layout_marginEnd="@dimen/margin_small"
             android:textIsSelectable="true"
+            android:textColor="?attr/colorOnSurface"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/skill_champions_detail_header_description"
@@ -40,11 +41,11 @@
             tools:text="Details about the champion" />
 
         <TextView
-            android:id="@+id/champion_detail_header_skills"
+            android:id="@+id/skill_champions_detail_header_champions"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margin_double"
-            android:text="@string/champion_detail_skills"
+            android:text="@string/skill_champions_detail_header_champions"
             android:textStyle="bold"
             android:textAppearance="?attr/textAppearanceSubtitle2"
             android:textColor="?attr/colorAccent"

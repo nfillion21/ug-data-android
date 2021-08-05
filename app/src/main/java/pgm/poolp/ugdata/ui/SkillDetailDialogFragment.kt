@@ -1,9 +1,11 @@
 package pgm.poolp.ugdata.ui
 
+import android.app.Dialog
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.Window
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.viewModels
@@ -29,7 +31,7 @@ class SkillDetailDialogFragment : DialogFragment() {
             inflater,
             R.layout.fragment_dialog_skill_champions_detail,
             container,
-            false
+            true
         ).apply {
             viewModel = skillDetailViewModel
             lifecycleOwner = this@SkillDetailDialogFragment
@@ -43,5 +45,11 @@ class SkillDetailDialogFragment : DialogFragment() {
             }
         }
         return binding.root
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+            //set dialog width
+        setStyle(STYLE_NORMAL, R.style.Theme_UGData_DialogStyle)
     }
 }

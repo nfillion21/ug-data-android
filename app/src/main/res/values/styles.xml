@@ -25,4 +25,18 @@
         <item name="android:textColor">?attr/colorOnSurface</item>
     </style>
 
+    <style name="Theme.UGData.DialogStyle" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowMinWidthMajor">97%</item>
+        <item name="android:windowMinWidthMinor">97%</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="colorPrimary">@color/ugdata_green_500</item>
+        <item name="colorOnPrimary">@color/ugdata_yellow_500</item>
+        <item name="colorPrimaryDark">@color/ugdata_green_700</item>
+        <item name="colorOnSurface">@color/ugdata_black</item>
+        <item name="colorAccent">@color/ugdata_green_700</item>
+        <item name="colorSurface">@color/ugdata_gray_50</item>
+        <item name="colorSecondary">@color/ugdata_yellow_500</item>
+        <item name="android:colorBackground">@color/ugdata_green_500</item>
+    </style>
+
 </resources>

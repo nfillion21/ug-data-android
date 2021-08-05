@@ -23,4 +23,5 @@
     <string name="champion_detail_characteristics" >Caractéristiques</string>
     <string name="skill_detail_description" >Description</string>
     <string name="champion_detail_skills">Skills</string>
+    <string name="skill_champions_detail_header_champions">Skilled champions</string>
 </resources>

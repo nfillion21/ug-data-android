@@ -6,15 +6,6 @@
             name="champion"
             type="pgm.poolp.ugdata.data.Champion"/>
     </data>
-    <!--
-    <TextView
-        android:id="@+id/header_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@{champion.name}"
-        android:textAppearance="?attr/textAppearanceHeadline3" />
-        -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -39,8 +30,10 @@
             android:layout_marginTop="@dimen/margin_normal"
             android:contentDescription="@string/champion_detail_image_content_description"
             android:fitsSystemWindows="true"
+            android:textColor="?attr/colorAccent"
             app:imageFromUrl="@{champion.characteristicsImageUrl}"
             app:layout_constraintTop_toBottomOf="@+id/champion_detail_header_characteristics"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_collapseMode="parallax" />
 
         <TextView

@@ -27,11 +27,12 @@
 
         <TextView
             android:id="@+id/fragment_skill_detail_description_content"
-            style="?android:attr/textAppearanceMedium"
+            style="?android:attr/textAppearanceListItem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_small"
             android:layout_marginTop="@dimen/margin_small"
+            android:textColor="?attr/colorOnSurface"
             android:layout_marginEnd="@dimen/margin_small"
             android:textIsSelectable="true"
             app:layout_constraintEnd_toEndOf="parent"
