@@ -1,8 +1,9 @@
 package pgm.poolp.ugdata.viewmodels
 
-import androidx.lifecycle.*
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.asLiveData
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.launch
 import pgm.poolp.ugdata.data.Champion
 import pgm.poolp.ugdata.data.ChampionRepository
 import javax.inject.Inject
@@ -16,25 +17,4 @@ class ChampionViewModel @Inject internal constructor(
     //   the UI when the data actually changes.
     // - Repository is completely separated from the UI through the ViewModel.
     val allChampions: LiveData<List<Champion>> = championRepository.allChampions.asLiveData()
-
-    /**
-     * Launching a new coroutine to insert the data in a non-blocking way
-     */
-    /*
-    fun insert(champion: Champion) = viewModelScope.launch {
-        championRepository.insert(champion)
-    }
-    */
 }
-
-/*
-class ChampionViewModelFactory(private val repository: ChampionRepository) : ViewModelProvider.Factory {
-    override fun <T : ViewModel> create(modelClass: Class<T>): T {
-        if (modelClass.isAssignableFrom(ChampionViewModel::class.java)) {
-            @Suppress("UNCHECKED_CAST")
-            return ChampionViewModel(repository) as T
-        }
-        throw IllegalArgumentException("Unknown ViewModel class")
-    }
-}
-*/
