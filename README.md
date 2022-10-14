@@ -1,6 +1,8 @@
 # Champions
 <https://play.google.com/store/apps/details?id=pgm.poolp.ugdata>
 
+A Jetpack Android app in which you can find Blood Bowl champions and their skills.
+
 Libraries Used
 --------------
 * [Foundation][0] - Components for core system capabilities, Kotlin extensions and support for
