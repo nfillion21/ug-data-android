@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <network-security-config>
     <domain-config cleartextTrafficPermitted="true">
-        <domain includeSubdomains="true">ug-data.xyz</domain>
+        <domain includeSubdomains="true">poolp.xyz</domain>
     </domain-config>
 </network-security-config>
